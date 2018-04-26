@@ -4,8 +4,7 @@ widget = "hero"
 active = true
 date = 2017-10-15T00:00:00
 
-title = "So what ... 
-just another blog about statistics and data analysis"
+title = "So what ... just another blog about statistics and data analysis"
 
 
 # Order that this section will appear in.
