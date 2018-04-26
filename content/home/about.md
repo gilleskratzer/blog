@@ -42,4 +42,4 @@ weight = 5
 
 # Biography
 
-Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, he decided to enhance his education in Physics by doing a master degree in Biostatistics at Zurich University. Then he continues his education in statistics with a PhD in epidemology.
+Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, he decided to enhance his education in Physics by doing a master degree in Biostatistics at Zurich University. Then he continues his education in statistics with a PhD in epidemiology.

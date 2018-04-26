@@ -33,8 +33,8 @@ filter_default = 0
   tag = "*"
 
 [[filter]]
-  name = "Deep Learning"
-  tag = ".deep-learning"
+  name = "Veterinary epidemiology"
+  tag = ".vetepi"
 
 [[filter]]
   name = "Other"

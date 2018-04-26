@@ -27,17 +27,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Biography Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis,
-After working several years in clinical research at different positions, I decided to enhance my education in Physics by doing a master degree in Biostatistics at the University of Zurich.</description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/publications_selected/</guid>
-      <description></description>
+      <description>Biography Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, he decided to enhance his education in Physics by doing a master degree in Biostatistics at Zurich University. Then he continues his education in statistics with a PhD in epidemiology.</description>
     </item>
     
     <item>
@@ -85,24 +75,6 @@ After working several years in clinical research at different positions, I decid
       <description>This is an example of using the custom widget to create your own homepage section.
 I am a teaching instructor for the following courses at University X:
  CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
-      
-      <guid>/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/contact/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -20,11 +20,23 @@ weight = 3
 
 +++
 
-<font color="grey">just another blog about statistics and data analysis <font />
+<font color="white">just another blog about statistics and data analysis <font />
+<font color="black">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-<br>
-<br>
-<br>
-<br>
 
