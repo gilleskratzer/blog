@@ -4,7 +4,8 @@ widget = "hero"
 active = true
 date = 2017-10-15T00:00:00
 
-title = "So what ... just another blog about statistics and data analysis"
+title = "So what ... "
+
 
 
 # Order that this section will appear in.
@@ -18,3 +19,9 @@ weight = 3
   overlay_filter = 0.85  # Darken the image. Value in range 0-1.
 
 +++
+
+just another blog about statistics and data analysis
+
+<br>
+<br>
+
