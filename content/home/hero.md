@@ -16,12 +16,15 @@ weight = 3
 [header]
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "headers/cover.png"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.85  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.75  # Darken the image. Value in range 0-1.
 
 +++
 
-just another blog about statistics and data analysis
+<font color="grey">just another blog about statistics and data analysis <font />
 
+
+<br>
+<br>
 <br>
 <br>
 
