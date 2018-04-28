@@ -40,15 +40,6 @@
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recents Posts</title>
       <link>/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
@@ -73,6 +64,17 @@
       
       <guid>/home/soft/</guid>
       <description> author of varrank R package that perform variable selection with applications in systemic datasets maintainer of abn R package that models multivariate data with Additive Bayesian Networks contributor of ATR R package for plotting party trees in left-right orientation instead of the classical top-down layout  </description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks/Posters</title>
+      <link>/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/talks/</guid>
+      <description>Futur events:
+ 2-3 July 2018, BAYSM 2018, Warwick. Poster: Comparison between Suitable Priors for Additive Bayesian Networks.  Past events:
+ 21-23 March 2018. Society for Veterinary Epidemiology and Preventive Medicine (SVEPM), Tallinn. Poster: Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology. 24-26 July 2017. TIES GRASPA, Bergamo. Poster: Additive Bayesian Network approach applied to time series and longitudinal datasets.  </description>
     </item>
     
   </channel>
