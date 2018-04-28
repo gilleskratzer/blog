@@ -224,7 +224,7 @@ enableGitInfo = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
+    icon = "paper-plane"
     icon_pack = "fa"
     link = "mailto:gilles.kratzer@gmail.com"
 
@@ -250,7 +250,7 @@ enableGitInfo = false
     
  [[params.social]]
     icon = "researchgate"
-    icon_pack = "fa"
+    icon_pack = "ai"
     link = "https://www.researchgate.net/profile/Gilles_Kratzer"
 
 # Navigation Links
@@ -282,9 +282,14 @@ enableGitInfo = false
   weight = 4
 
 [[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
+  name = "Software"
+  url = "#soft"
   weight = 5
+  
+  [[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 6
 
 # Configure the English version of the website.
 [Languages.en]

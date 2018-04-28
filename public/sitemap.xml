@@ -14,8 +14,8 @@
     
     <url>
     
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <loc>/post/repro/</loc>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -23,7 +23,43 @@
     
     <url>
     
-      <loc>/talk/example-talk/</loc>
+      <loc>/post/gillespie/</loc>
+      <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/sandro1/</loc>
+      <lastmod>2017-10-01T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/iskendar/</loc>
+      <lastmod>2017-03-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/sandro2/</loc>
+      <lastmod>2017-02-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -59,8 +95,8 @@
     
     <url>
     
-      <loc>/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>/post/ngram/</loc>
+      <lastmod>2016-09-30T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -68,7 +104,25 @@
     
     <url>
     
-      <loc>/project/example-external-project/</loc>
+      <loc>/post/abn_used/</loc>
+      <lastmod>2016-09-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/download/</loc>
+      <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/abn/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
@@ -86,8 +140,8 @@
     
     <url>
     
-      <loc>/post/getting-started/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <loc>/publication/haug/</loc>
+      <lastmod>2011-11-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -95,17 +149,9 @@
     
     <url>
     
-      <loc>/publication/person-re-identification-copy-2/</loc>
-      <lastmod>2015-09-01T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/cran/</loc>
+      <lastmod>2016-09-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -122,8 +168,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>/tags/data-visualization/</loc>
+      <lastmod>2016-09-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -132,8 +178,8 @@
     
     <url>
     
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>/tags/gillespie/</loc>
+      <lastmod>2017-12-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -142,8 +188,8 @@
     
     <url>
     
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/ngram/</loc>
+      <lastmod>2016-09-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -163,7 +209,17 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -173,7 +229,7 @@
     <url>
     
       <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <lastmod>2016-09-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -182,8 +238,28 @@
     
     <url>
     
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/reproducibility-in-academic-research/</loc>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/sir/</loc>
+      <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/simulation/</loc>
+      <lastmod>2017-12-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -194,6 +270,26 @@
     
       <loc>/</loc>
       <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/software/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/statistical-philosophy/</loc>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

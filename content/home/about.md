@@ -17,11 +17,11 @@ weight = 5
     "Open and Reproducible research"
   ]
 
-# List your qualifications (such as academic degrees).
-#[[education.courses]]
-#  course = "PhD in applied"
-#  institution = "Stanford University"
-#  year = 2016
+
+[[education.courses]]
+  course = "PhD in Bostatistics"
+  institution = "Zurich University"
+  year = 2019
 
 [[education.courses]]
   course = "MSc in Bostatistics"
@@ -43,3 +43,5 @@ weight = 5
 # Biography
 
 Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, he decided to enhance his education in Physics by doing a master degree in Biostatistics at Zurich University. Then he continues his education in statistics with a PhD in epidemiology.
+
+Full <a href = "https://curriculum.netlify.com/" target="_blank"> digital CV</a>.

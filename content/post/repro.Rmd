@@ -1,0 +1,24 @@
+---
+title: "Reproducibility in Science"
+author: "Gilles Kratzer"
+date: 2018-03-30T00:00:00
+categories: ["R"]
+tags: ["R", "statistical philosophy", "reproducibility in academic research"]
+---
+
+
+As a biostatistician I am particularly concerned by reproducibility in research (**RR**). I try very hard to do reproducible research. It is often hard. Often this is not clear how to achieve **RR**. Within our group, we had recently some discussions about **RR**.  Below is a small *personal* manifesto for **RR**.
+
+# Manifesto for reproducible research
+
+I believe that good science is made of trustable science. I believe that the most trustable academic research can only be achieved with a rigorous application of scientific methods. I believe that a minimal condition of the scientific methods is reproducibility of the research. While being viewed as obvious consent within Academia, in practice it requires extremely well organised scientists. Statistics is by nature an interdisciplinary effort and as many other disciplines it faces the reproducibility crisis. If one want to produce relevant, widely accessible and trustable scientific outputs one has to take it very seriously.
+
+I view the reproducible research approach as a comprehensive philosophy. It includes the individual research of academic group members but also external collaborations. An essential part of reproducibility is the transparency of data. Therefore I tried to use publicly available and trustable data wherever possible and feasible. Likewise, I make my data product openly accessible together with the necessary documentation.
+
+I believe that scripting is the optimal way to achieve reproducible workflow. In order to create easily reproducible software packages, I follow the dynamic programming approach, which is a method to solve large scale problems by atomising them into simple tasks. Using version control allows me to document changes, ensuring historical reproducibility and efficient collaboration. I pay a special attention to publish the necessary documentation together with my softwares.
+
+Producing and delivering reproducible code implies being as independent as possible of the user environment. This is why I use platform independent and open source programming languages. It also requires to produce well documented code that corresponds to commonly used code styles, which facilitates user readability. I believe that the tests used to develop code are part of the code and then should be published. 
+
+I believe that complex scientific challenges require large collaborative work to be tackled. I believe that reproducibility is of higher importance there. This is why I aim at working in an organised manner which means to be sparse with the documents I exchange to ensure efficient partnership. I believe that continuous integration is a way to save precious time.
+
+Reproducible research is a fast moving research area and I invest time for scooting new approaches and exchange with other research groups.

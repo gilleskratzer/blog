@@ -1,0 +1,126 @@
+---
+title: "Stochastic SIR"
+author: "Gilles Kratzer"
+date: 2017-12-03T00:00:00
+categories: ["R"]
+tags: ["SIR", "simulation", "gillespie"]
+
+---
+
+
+
+<p>I did my <a href="http://www.math.uzh.ch/li/index.php?file&amp;key1=41327">Master Thesis</a>, about <strong>Infectious Disease Inference</strong>, at Stockholm University in the departement of <a href="http://www.math.su.se/english/education/programmes/mathematical-statistics">Mathematical Statistics</a>. Infectious disease inference is a very interesting and challenging research subject. Moreover this domain of statistcs is at the edge between statistics and simulations (which made my background in physics very relevant and suddenly make my stats and physics master start resonating). I think that this was my very first contact with computational statistics and it gave me the desir to learn more!</p>
+<p>Here is a little bit of epidemic modelling. A detailed version (with references, codes and examples) of this introduction can be found <a href="http://www.math.uzh.ch/li/index.php?file&amp;key1=41327">here</a>.</p>
+<div id="sir-model" class="section level1">
+<h1>SIR model</h1>
+<p>The mathematical modelling of infectious diseases (aka Infectious Disease Inference) is a tool to study the mechanisms by which diseases spread, to predict the future course of an outbreak and to evaluate strategies to control an epidemic. In the class of <a href="https://en.wikipedia.org/wiki/Multi-compartment_model">compartmental models</a>, which serve as a base mathematical framework for understanding the complex dynamics of infectious diseases, the Susceptible-Infectious-Recovered (<a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">SIR</a>) model is a valuable model for many infectious diseases.</p>
+<div id="deterministic-setting" class="section level2">
+<h2>Deterministic setting</h2>
+<p>When dealing with large populations deterministic models are often used. In deterministic compartmental models, the transition rates from one compartment to another are mathematically expressed as derivatives. Hence the model is formulated using ordinary differential equations (<a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation">ODE</a>). A closed population is assumed at all times <span class="math inline">\(t\)</span>, then <span class="math inline">\(P(t)=S(t)+I(t)+R(t)\)</span>.</p>
+<ul>
+<li><span class="math inline">\(\frac{dS(t)}{dt} = - \beta S(t)\frac{I(t)}{P(t)}\)</span></li>
+<li><span class="math inline">\(\frac{dI(t)}{dt} = \beta S(t)\frac{I(t)}{P(t)} - \gamma I(t)\)</span></li>
+<li><span class="math inline">\(\frac{dR(t)}{dt} = \gamma I(t)\)</span></li>
+</ul>
+<p>Here are two example of deterministic modelling with and without birth and death process in the compartments.</p>
+<pre class="r"><code>##package
+library(deSolve)
+
+##################################################
+### Basic model SIR simulations
+###################################################
+
+##function
+sir &lt;- function(time, state, parameters) {
+  with(as.list(c(state, parameters)), {
+    dS &lt;- -beta * S * I
+    dI &lt;- beta * S * I - gamma * I
+    dR &lt;- gamma * I
+    
+    return(list(c(dS, dI, dR)))
+  })
+}
+
+##############################################################################
+init &lt;- c(S = 1-1e-6, I = 1e-6, 0.0)
+parameters &lt;- c(beta = 0.15, gamma = 0.005)
+times &lt;- seq(0, 1000, by = 1)
+out &lt;- as.data.frame(ode(y = init, times = times, func = sir, parms = parameters))
+out$time &lt;- NULL
+
+par(cex=1.5)
+
+matplot(times, out, type = &quot;l&quot;, xlab = &quot;Time&quot;, ylab = &quot;Population&quot;, main = &quot;SIR Model&quot;, lwd = 1, lty = 1, bty = &quot;l&quot;, col = 2:4)
+legend(x = 500,y = 0.6,c(&quot;Susceptibles&quot;, &quot;Infecteds&quot;, &quot;Recovereds&quot;), pch = 16, col = 2:4)</code></pre>
+<p><img src="/post/gillespie_files/figure-html/cars-1.png" width="672" /></p>
+<pre class="r"><code>##################################################
+### Model SIR with birth and dead rate 
+###################################################
+
+
+sir_bd &lt;- function(time, state, parameters) {
+  with(as.list(c(state, parameters)), {
+    dS &lt;- birth - beta*S*I - death*S
+    dI &lt;- beta*S*I - gamma*I - death*I
+    dR &lt;- gamma*I - death*R
+    
+    return(list(c(dS, dI, dR)))
+  })
+}
+
+
+##############################################################################
+init &lt;- c(S = 1-1e-6, I = 1e-6, R = 0.0)
+parameters &lt;- c(beta = 0.15, gamma = 0.005, birth =0.001, death=0.001)
+times &lt;- seq(0, 1000, by = 1)
+out &lt;- as.data.frame(ode(y = init, times = times, func = sir_bd, parms = parameters))
+out$time &lt;- NULL
+
+matplot(times, out, type = &quot;l&quot;, xlab = &quot;Time&quot;, ylab = &quot;Population&quot;, main = &quot;SIR Model including birth and death rates&quot;, lwd = 1, lty = 1, bty = &quot;l&quot;, col = 2:4)
+legend(x = 500,y = 0.6,c(&quot;Susceptibles&quot;, &quot;Infecteds&quot;, &quot;Recovereds&quot;), pch = 16, col = 2:4)</code></pre>
+<p><img src="/post/gillespie_files/figure-html/cars-2.png" width="672" /></p>
+</div>
+<div id="stochastic-modelling" class="section level2">
+<h2>Stochastic modelling</h2>
+<p>A stochastic SIR model is defined analogously as the deterministic model. A closed homogeneous population is assumed, and <span class="math inline">\(S(t)\)</span>, <span class="math inline">\(I(t)\)</span> and <span class="math inline">\(R(t)\)</span> have the same definition as in the deterministic setting. As done previously, birth and death are ignored in this simple setting. The dynamic of the model is defined as follows. Infectives have contact with susceptibles at a constant rate <span class="math inline">\(\beta\)</span>. Contacts are mutually independent. Any susceptible which is in contact with an infected individual immediately becomes infective and starts spreading the disease following the same rules. Infected individuals remain infectious for a random amount of time governed by an infections period distribution after which they stop being infectious and recover. The infectious periods are defined to be independent and identically distributed (also independent of the contact processes). The exponential distribution with intensity parameter <span class="math inline">\(\gamma\)</span> has received special attention in the literature, because the resulting model is Markovian. A stochastic process is said to be a Markov process or have the markov property if the conditional probability of the future state conditional on both present and past states depends only on the present state of the process.</p>
+<p>A simple and efficient algorithm to simulate a stochastic model is the <em><a href="https://en.wikipedia.org/wiki/Gillespie_algorithm">Gillespie algorithm</a></em>. This algorithm assumes that all possible transitions between compartments occur independently and are simulated at each time step with constant probability per unit time that depends on the current state of the system (i.e the number of individual in each compartment). The idea is to sample the next time event from an exponential distribution. Then, the event is randomly chosen amongst the possible transitions between compartments with probabilities proportional to their individual rates. The code below shows two realizations for a small and a large population of a stochastic SIR model simulated by a Gillespie algorithm.</p>
+<pre class="r"><code>parms=c(m=0,b=0.02,v=0.1,r=0.3)
+
+# define how state variables S, I and R change for each process
+processes &lt;- matrix(c(1,1,1,
+                      -1,0,0,
+                      0,-1,0,
+                      0,0,-1,
+                      -1,1,0,
+                      0,-1,0,
+                      0,-1,1), nrow=7, ncol=3, byrow = TRUE,
+                    dimnames=list(c(&quot;birth&quot;,
+                                    &quot;death.S&quot;,
+                                    &quot;death.I&quot;,
+                                    &quot;death.R&quot;,
+                                    &quot;infection&quot;,
+                                    &quot;death.infec&quot;,
+                                    &quot;recovery&quot;),
+                                  c(&quot;dS&quot;,&quot;dI&quot;,&quot;dR&quot;)))
+
+##import necessary files/fct
+source(file=&quot;RFun/gillespie_fct_R.R&quot;)
+
+##small population
+initial.state=c(S=97, I=3, R=0)
+
+res&lt;-gillespie(parms=parms, X0=initial.state, time.window=c(0,1000), processes=processes,pb = FALSE)
+par(cex=1.5)
+matplot(x = res[,1], y = res[,-1], type = &quot;l&quot;, lty = 1, xlab = &quot;Time&quot;, ylab = &quot;Population&quot;,col = 2:4, ylim=c(0,100), xlim=c(0,10), main=&quot;One realization of a stochastic model \n for S(0)=97, I(0)=3, R(0)=0&quot;)
+legend(x=6,y=50,c(&quot;Susceptibles&quot;, &quot;Infecteds&quot;, &quot;Recovereds&quot;), pch = 16, col = 2:4)</code></pre>
+<p><img src="/post/gillespie_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>##huge population
+initial.state=c(S=997, I=3, R=0)
+
+res&lt;-gillespie(parms=parms, X0=initial.state, time.window=c(0,10000), processes=processes,pb = FALSE)
+matplot(x = res[,1], y = res[,-1], type = &quot;l&quot;, lty = 1, xlab = &quot;Time&quot;, ylab = &quot;Population&quot;,col = 2:4, ylim=c(0,1000), xlim=c(0,10), main=&quot;One realization of a stochastic model \n for S(0)=997, I(0)=3, R(0)=0&quot;)
+legend(x=6,y=500,c(&quot;Susceptibles&quot;, &quot;Infecteds&quot;, &quot;Recovereds&quot;), pch = 16, col = 2:4)</code></pre>
+<p><img src="/post/gillespie_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<p>In a next post I will comment on the code of the parallel gillespie R function …</p>
+</div>
+</div>

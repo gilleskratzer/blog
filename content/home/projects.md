@@ -31,14 +31,14 @@ filter_default = 0
 [[filter]]
   name = "All"
   tag = "*"
+  
+  [[filter]]
+  name = "software"
+  tag = ".software"
 
 [[filter]]
   name = "Veterinary epidemiology"
   tag = ".vetepi"
-
-[[filter]]
-  name = "Other"
-  tag = ".demo"
 
 +++
 

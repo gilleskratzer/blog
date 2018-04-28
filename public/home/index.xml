@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>Recent Publications</title>
+      <title>Publications</title>
       <link>/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
@@ -49,7 +49,7 @@
     </item>
     
     <item>
-      <title>Recent Posts</title>
+      <title>Recents Posts</title>
       <link>/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
@@ -67,14 +67,12 @@
     </item>
     
     <item>
-      <title>Teaching</title>
-      <link>/home/teaching/</link>
+      <title>Software</title>
+      <link>/home/soft/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-I am a teaching instructor for the following courses at University X:
- CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
+      <guid>/home/soft/</guid>
+      <description> author of varrank R package that perform variable selection with applications in systemic datasets maintainer of abn R package that models multivariate data with Additive Bayesian Networks contributor of ATR R package for plotting party trees in left-right orientation instead of the classical top-down layout  </description>
     </item>
     
   </channel>

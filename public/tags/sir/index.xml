@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SIR on So what ...</title>
+    <link>/tags/sir/</link>
+    <description>Recent content in SIR on So what ...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
+    <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sir/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stochastic SIR</title>
+      <link>/post/gillespie/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/gillespie/</guid>
+      <description>I did my Master Thesis, about Infectious Disease Inference, at Stockholm University in the departement of Mathematical Statistics. Infectious disease inference is a very interesting and challenging research subject. Moreover this domain of statistcs is at the edge between statistics and simulations (which made my background in physics very relevant and suddenly make my stats and physics master start resonating). I think that this was my very first contact with computational statistics and it gave me the desir to learn more!</description>
+    </item>
+    
+  </channel>
+</rss>

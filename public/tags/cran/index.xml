@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CRAN on So what ...</title>
+    <link>/tags/cran/</link>
+    <description>Recent content in CRAN on So what ...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
+    <lastBuildDate>Sat, 03 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cran/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>abn use accross the world?</title>
+      <link>/post/abn_used/</link>
+      <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/abn_used/</guid>
+      <description>This post is highly inspired by this post from R-Bloggers and my previous post. Again the necessary code is available here.
+As maintenair of an R package, it is always interesting to know if it is used and by whom? This post shows some plots to asses R package usage.
+I started by a small review to list the similar other R packages. I found that bnlearn, deal and grbase are comparable to abn.</description>
+    </item>
+    
+    <item>
+      <title>When do R programmers work?</title>
+      <link>/post/download/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/download/</guid>
+      <description>This post is highly inspired by this post and this post. Here is the necessary code to produce those graphs (be aware that it is time and memory consuming!).
+On June 10 2013, RStudio provides CRAN mirror logs download from 2012-10-01. Then it is possible to analyze this rich and huge amount of data. On an individual level, one can track the popularity of their (preferred package). Here one can track the number of download of the three most downloaded R packages.</description>
+    </item>
+    
+  </channel>
+</rss>

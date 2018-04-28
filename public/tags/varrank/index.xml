@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Varrank on So what ...</title>
+    <link>/tags/varrank/</link>
+    <description>Recent content in Varrank on So what ...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/varrank/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>varrank</title>
+      <link>/project/varrank/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/project/varrank/</guid>
+      <description>A common challenge encountered when working with high dimensional datasets is that of variable selection. All relevant confounders must be taken into account to allow for unbiased estimation of model parameters, while balancing with the need for parsimony and producing interpretable models. This task is known to be one of the most controversial and difficult tasks in epidemiological analysis.
+Variable selection approaches can be categorized into three broad classes: filter-based methods, wrapper-based methods, and embedded methods.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -20,40 +20,522 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      <title>Reproducibility in Science</title>
+      <link>/post/repro/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>/post/repro/</guid>
+      <description>&lt;p&gt;As a biostatistician I am particularly concerned by reproducibility in research (&lt;strong&gt;RR&lt;/strong&gt;). I try very hard to do reproducible research. It is often hard. Often this is not clear how to achieve &lt;strong&gt;RR&lt;/strong&gt;. Within our group, we had recently some discussions about &lt;strong&gt;RR&lt;/strong&gt;. Below is a small &lt;em&gt;personal&lt;/em&gt; manifesto for &lt;strong&gt;RR&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;manifesto-for-reproducible-research&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Manifesto for reproducible research&lt;/h1&gt;
+&lt;p&gt;I believe that good science is made of trustable science. I believe that the most trustable academic research can only be achieved with a rigorous application of scientific methods. I believe that a minimal condition of the scientific methods is reproducibility of the research. While being viewed as obvious consent within Academia, in practice it requires extremely well organised scientists. Statistics is by nature an interdisciplinary effort and as many other disciplines it faces the reproducibility crisis. If one want to produce relevant, widely accessible and trustable scientific outputs one has to take it very seriously.&lt;/p&gt;
+&lt;p&gt;I view the reproducible research approach as a comprehensive philosophy. It includes the individual research of academic group members but also external collaborations. An essential part of reproducibility is the transparency of data. Therefore I tried to use publicly available and trustable data wherever possible and feasible. Likewise, I make my data product openly accessible together with the necessary documentation.&lt;/p&gt;
+&lt;p&gt;I believe that scripting is the optimal way to achieve reproducible workflow. In order to create easily reproducible software packages, I follow the dynamic programming approach, which is a method to solve large scale problems by atomising them into simple tasks. Using version control allows me to document changes, ensuring historical reproducibility and efficient collaboration. I pay a special attention to publish the necessary documentation together with my softwares.&lt;/p&gt;
+&lt;p&gt;Producing and delivering reproducible code implies being as independent as possible of the user environment. This is why I use platform independent and open source programming languages. It also requires to produce well documented code that corresponds to commonly used code styles, which facilitates user readability. I believe that the tests used to develop code are part of the code and then should be published.&lt;/p&gt;
+&lt;p&gt;I believe that complex scientific challenges require large collaborative work to be tackled. I believe that reproducibility is of higher importance there. This is why I aim at working in an organised manner which means to be sparse with the documents I exchange to ensure efficient partnership. I believe that continuous integration is a way to save precious time.&lt;/p&gt;
+&lt;p&gt;Reproducible research is a fast moving research area and I invest time for scooting new approaches and exchange with other research groups.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      <title>Stochastic SIR</title>
+      <link>/post/gillespie/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <guid>/post/gillespie/</guid>
+      <description>&lt;p&gt;I did my &lt;a href=&#34;http://www.math.uzh.ch/li/index.php?file&amp;amp;key1=41327&#34;&gt;Master Thesis&lt;/a&gt;, about &lt;strong&gt;Infectious Disease Inference&lt;/strong&gt;, at Stockholm University in the departement of &lt;a href=&#34;http://www.math.su.se/english/education/programmes/mathematical-statistics&#34;&gt;Mathematical Statistics&lt;/a&gt;. Infectious disease inference is a very interesting and challenging research subject. Moreover this domain of statistcs is at the edge between statistics and simulations (which made my background in physics very relevant and suddenly make my stats and physics master start resonating). I think that this was my very first contact with computational statistics and it gave me the desir to learn more!&lt;/p&gt;
+&lt;p&gt;Here is a little bit of epidemic modelling. A detailed version (with references, codes and examples) of this introduction can be found &lt;a href=&#34;http://www.math.uzh.ch/li/index.php?file&amp;amp;key1=41327&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;sir-model&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;SIR model&lt;/h1&gt;
+&lt;p&gt;The mathematical modelling of infectious diseases (aka Infectious Disease Inference) is a tool to study the mechanisms by which diseases spread, to predict the future course of an outbreak and to evaluate strategies to control an epidemic. In the class of &lt;a href=&#34;https://en.wikipedia.org/wiki/Multi-compartment_model&#34;&gt;compartmental models&lt;/a&gt;, which serve as a base mathematical framework for understanding the complex dynamics of infectious diseases, the Susceptible-Infectious-Recovered (&lt;a href=&#34;https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model&#34;&gt;SIR&lt;/a&gt;) model is a valuable model for many infectious diseases.&lt;/p&gt;
+&lt;div id=&#34;deterministic-setting&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Deterministic setting&lt;/h2&gt;
+&lt;p&gt;When dealing with large populations deterministic models are often used. In deterministic compartmental models, the transition rates from one compartment to another are mathematically expressed as derivatives. Hence the model is formulated using ordinary differential equations (&lt;a href=&#34;https://en.wikipedia.org/wiki/Ordinary_differential_equation&#34;&gt;ODE&lt;/a&gt;). A closed population is assumed at all times &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;\(P(t)=S(t)+I(t)+R(t)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\frac{dS(t)}{dt} = - \beta S(t)\frac{I(t)}{P(t)}\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\frac{dI(t)}{dt} = \beta S(t)\frac{I(t)}{P(t)} - \gamma I(t)\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\frac{dR(t)}{dt} = \gamma I(t)\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are two example of deterministic modelling with and without birth and death process in the compartments.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##package
+library(deSolve)
 
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+##################################################
+### Basic model SIR simulations
+###################################################
 
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+##function
+sir &amp;lt;- function(time, state, parameters) {
+  with(as.list(c(state, parameters)), {
+    dS &amp;lt;- -beta * S * I
+    dI &amp;lt;- beta * S * I - gamma * I
+    dR &amp;lt;- gamma * I
+    
+    return(list(c(dS, dI, dR)))
+  })
+}
 
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+##############################################################################
+init &amp;lt;- c(S = 1-1e-6, I = 1e-6, 0.0)
+parameters &amp;lt;- c(beta = 0.15, gamma = 0.005)
+times &amp;lt;- seq(0, 1000, by = 1)
+out &amp;lt;- as.data.frame(ode(y = init, times = times, func = sir, parms = parameters))
+out$time &amp;lt;- NULL
 
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+par(cex=1.5)
+
+matplot(times, out, type = &amp;quot;l&amp;quot;, xlab = &amp;quot;Time&amp;quot;, ylab = &amp;quot;Population&amp;quot;, main = &amp;quot;SIR Model&amp;quot;, lwd = 1, lty = 1, bty = &amp;quot;l&amp;quot;, col = 2:4)
+legend(x = 500,y = 0.6,c(&amp;quot;Susceptibles&amp;quot;, &amp;quot;Infecteds&amp;quot;, &amp;quot;Recovereds&amp;quot;), pch = 16, col = 2:4)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gillespie_files/figure-html/cars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##################################################
+### Model SIR with birth and dead rate 
+###################################################
+
+
+sir_bd &amp;lt;- function(time, state, parameters) {
+  with(as.list(c(state, parameters)), {
+    dS &amp;lt;- birth - beta*S*I - death*S
+    dI &amp;lt;- beta*S*I - gamma*I - death*I
+    dR &amp;lt;- gamma*I - death*R
+    
+    return(list(c(dS, dI, dR)))
+  })
+}
+
+
+##############################################################################
+init &amp;lt;- c(S = 1-1e-6, I = 1e-6, R = 0.0)
+parameters &amp;lt;- c(beta = 0.15, gamma = 0.005, birth =0.001, death=0.001)
+times &amp;lt;- seq(0, 1000, by = 1)
+out &amp;lt;- as.data.frame(ode(y = init, times = times, func = sir_bd, parms = parameters))
+out$time &amp;lt;- NULL
+
+matplot(times, out, type = &amp;quot;l&amp;quot;, xlab = &amp;quot;Time&amp;quot;, ylab = &amp;quot;Population&amp;quot;, main = &amp;quot;SIR Model including birth and death rates&amp;quot;, lwd = 1, lty = 1, bty = &amp;quot;l&amp;quot;, col = 2:4)
+legend(x = 500,y = 0.6,c(&amp;quot;Susceptibles&amp;quot;, &amp;quot;Infecteds&amp;quot;, &amp;quot;Recovereds&amp;quot;), pch = 16, col = 2:4)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gillespie_files/figure-html/cars-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;stochastic-modelling&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Stochastic modelling&lt;/h2&gt;
+&lt;p&gt;A stochastic SIR model is defined analogously as the deterministic model. A closed homogeneous population is assumed, and &lt;span class=&#34;math inline&#34;&gt;\(S(t)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(I(t)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(R(t)\)&lt;/span&gt; have the same definition as in the deterministic setting. As done previously, birth and death are ignored in this simple setting. The dynamic of the model is defined as follows. Infectives have contact with susceptibles at a constant rate &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;. Contacts are mutually independent. Any susceptible which is in contact with an infected individual immediately becomes infective and starts spreading the disease following the same rules. Infected individuals remain infectious for a random amount of time governed by an infections period distribution after which they stop being infectious and recover. The infectious periods are defined to be independent and identically distributed (also independent of the contact processes). The exponential distribution with intensity parameter &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; has received special attention in the literature, because the resulting model is Markovian. A stochastic process is said to be a Markov process or have the markov property if the conditional probability of the future state conditional on both present and past states depends only on the present state of the process.&lt;/p&gt;
+&lt;p&gt;A simple and efficient algorithm to simulate a stochastic model is the &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Gillespie_algorithm&#34;&gt;Gillespie algorithm&lt;/a&gt;&lt;/em&gt;. This algorithm assumes that all possible transitions between compartments occur independently and are simulated at each time step with constant probability per unit time that depends on the current state of the system (i.e the number of individual in each compartment). The idea is to sample the next time event from an exponential distribution. Then, the event is randomly chosen amongst the possible transitions between compartments with probabilities proportional to their individual rates. The code below shows two realizations for a small and a large population of a stochastic SIR model simulated by a Gillespie algorithm.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;parms=c(m=0,b=0.02,v=0.1,r=0.3)
+
+# define how state variables S, I and R change for each process
+processes &amp;lt;- matrix(c(1,1,1,
+                      -1,0,0,
+                      0,-1,0,
+                      0,0,-1,
+                      -1,1,0,
+                      0,-1,0,
+                      0,-1,1), nrow=7, ncol=3, byrow = TRUE,
+                    dimnames=list(c(&amp;quot;birth&amp;quot;,
+                                    &amp;quot;death.S&amp;quot;,
+                                    &amp;quot;death.I&amp;quot;,
+                                    &amp;quot;death.R&amp;quot;,
+                                    &amp;quot;infection&amp;quot;,
+                                    &amp;quot;death.infec&amp;quot;,
+                                    &amp;quot;recovery&amp;quot;),
+                                  c(&amp;quot;dS&amp;quot;,&amp;quot;dI&amp;quot;,&amp;quot;dR&amp;quot;)))
+
+##import necessary files/fct
+source(file=&amp;quot;RFun/gillespie_fct_R.R&amp;quot;)
+
+##small population
+initial.state=c(S=97, I=3, R=0)
+
+res&amp;lt;-gillespie(parms=parms, X0=initial.state, time.window=c(0,1000), processes=processes,pb = FALSE)
+par(cex=1.5)
+matplot(x = res[,1], y = res[,-1], type = &amp;quot;l&amp;quot;, lty = 1, xlab = &amp;quot;Time&amp;quot;, ylab = &amp;quot;Population&amp;quot;,col = 2:4, ylim=c(0,100), xlim=c(0,10), main=&amp;quot;One realization of a stochastic model \n for S(0)=97, I(0)=3, R(0)=0&amp;quot;)
+legend(x=6,y=50,c(&amp;quot;Susceptibles&amp;quot;, &amp;quot;Infecteds&amp;quot;, &amp;quot;Recovereds&amp;quot;), pch = 16, col = 2:4)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gillespie_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##huge population
+initial.state=c(S=997, I=3, R=0)
+
+res&amp;lt;-gillespie(parms=parms, X0=initial.state, time.window=c(0,10000), processes=processes,pb = FALSE)
+matplot(x = res[,1], y = res[,-1], type = &amp;quot;l&amp;quot;, lty = 1, xlab = &amp;quot;Time&amp;quot;, ylab = &amp;quot;Population&amp;quot;,col = 2:4, ylim=c(0,1000), xlim=c(0,10), main=&amp;quot;One realization of a stochastic model \n for S(0)=997, I(0)=3, R(0)=0&amp;quot;)
+legend(x=6,y=500,c(&amp;quot;Susceptibles&amp;quot;, &amp;quot;Infecteds&amp;quot;, &amp;quot;Recovereds&amp;quot;), pch = 16, col = 2:4)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gillespie_files/figure-html/unnamed-chunk-1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In a next post I will comment on the code of the parallel gillespie R function …&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      <title>Characterization of the Vitrocell® 24/48 aerosol exposure system for its use in exposures to liquid aerosols</title>
+      <link>/publication/sandro1/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0200</pubDate>
       
-      <guid>/project/example-external-project/</guid>
+      <guid>/publication/sandro1/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>A systems toxicology approach for comparative assessment: Biological impact of an aerosol from a candidate modified-risk tobacco product and cigarette smoke on human organotypic bronchial epithelial cultures.</title>
+      <link>/publication/iskendar/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/iskendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new fluorescence-based method for characterizing in vitro aerosol exposure systems</title>
+      <link>/publication/sandro2/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/sandro2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Ngram</title>
+      <link>/post/ngram/</link>
+      <pubDate>Fri, 30 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ngram/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://books.google.com/ngrams&#34;&gt;Google Ngram Viewer&lt;/a&gt;, started in December 2010, is an online search engine that returns the yearly relative frequency of a set of words, found in a selected printed sources, called corpus of books, between 1500 and 2016 (many language available). More specifically, it returns the relative frequency of the yearly &lt;strong&gt;ngram&lt;/strong&gt; (continuous set of n words. For example, &lt;strong&gt;I&lt;/strong&gt; is a 1-gram and &lt;strong&gt;I am&lt;/strong&gt; is a 2-grams). This means that if you search for &lt;em&gt;one&lt;/em&gt; word (called unigram), you get the percentage of this word to all the other word found in the corpus of books for a certain year. When I discovered it, I was shocked! With &lt;strong&gt;google ngram&lt;/strong&gt; one can plot the yearly relative frequency of &lt;em&gt;any&lt;/em&gt; ngram! The &lt;a href=&#34;https://books.google.com/ngrams&#34;&gt;Google Ngram Viewer&lt;/a&gt; help page contains a lot of very convincing examples. It is the perfect typical data mining tool. I started to imagine what I could do with such a tool. One can study trends in knowledge, one can study relative importance of concepts etc …&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;http://science.sciencemag.org/content/331/6014/176.full&#34;&gt;science paper&lt;/a&gt; has been published in 2011. They named this research field as &lt;em&gt;culturomics&lt;/em&gt;. This paper presents some convincing search examples, which put the &lt;em&gt;culturomics&lt;/em&gt; in front of the scientific literature. This research field has popping up in social science articles and made the Google ngrams charts very common and popular. This Google’ service have received many criticisms. A &lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137041&#34;&gt;PLOS paper&lt;/a&gt; discuss the pitfalls of Google ngrams. Mainly inaccurate character recognition, an overabundance of scientific literature, misindexation and misdating of texts. Up to that point, I though that this was manageable. Indeed, inaccuracies will be soon corrected and Google will incorporate other books then this will not be a problem. Last criticism is that the percentage take into account published manuscripts regardless of their importance. Again this paper discuss from in a very convincing way the limitations of Google ngram.&lt;/p&gt;
+&lt;p&gt;We definitely need an R package to test it. Hopefully, it exists &lt;a href=&#34;https://github.com/seancarmody/ngramr&#34;&gt;ngramr&lt;/a&gt;, an r package available on github. It is very efficient and easy to use. Then let us start with our first search (an inspired joke by &lt;a href=&#34;http://xkcd.com/1007/&#34;&gt;xkcd&lt;/a&gt; actually).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(devtools)
+install_github(&amp;quot;ngramr&amp;quot;, &amp;quot;seancarmody&amp;quot;)
+library(ngramr)
+
+data&amp;lt;-ngrami(c(&amp;quot;sustainability&amp;quot;))
+
+library(ggplot2)
+data.sub&amp;lt;-subset(data,data$Year&amp;gt;1985)
+
+p&amp;lt;- ggplot(data,aes(x = Year, y=Frequency))+
+  geom_point()+
+  stat_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE,data=data, fullrange = TRUE)+
+  scale_y_log10(limits=c(0.00000000001,1))+
+  xlim(1945,2100)+
+  annotate(&amp;quot;pointrange&amp;quot;, x = 2072, y = 0.5, ymin = 0.01, ymax = 0.8,
+           colour = &amp;quot;red&amp;quot;, size = 1.5)+
+  annotate(&amp;quot;text&amp;quot;, x = 2072, y = 0.001, label = &amp;quot;100% of words are Sustainability&amp;quot;,colour=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which produces this graph. Fast and easy! As one can see, on a log scale Google ngram predicts that in a near future all published literature will be made of the word “Sustainability” written over and over …&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/ngram_files/figure-html/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>abn use accross the world?</title>
+      <link>/post/abn_used/</link>
+      <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/abn_used/</guid>
+      <description>&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;This post is highly inspired by &lt;a href=&#34;https://www.r-bloggers.com/my-r-packages-worldmap-of-downloads/&#34;&gt;this post&lt;/a&gt; from R-Bloggers and my &lt;a href=&#34;#IDdownload&#34;&gt;previous post&lt;/a&gt;. Again the necessary code is available &lt;a href=&#34;&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As maintenair of an R package, it is always interesting to know if it is used and by whom? This post shows some plots to asses R package usage.&lt;/p&gt;
+&lt;p&gt;I started by a small review to list the similar other R packages. I found that &lt;a href=&#34;https://cran.r-project.org/web/packages/bnlearn/index.html&#34;&gt;bnlearn&lt;/a&gt;, &lt;a href=&#34;https://cran.r-project.org/web/packages/deal/index.html&#34;&gt;deal&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/gRbase/index.html&#34;&gt;grbase&lt;/a&gt; are comparable to &lt;a href=&#34;https://cran.r-project.org/web/packages/abn/index.html&#34;&gt;abn&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is a comparative scatter plot of the daily count of downloads, from May the 1st to September the 4th, for the listed package.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/images/dowloads_comp.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is the ordered total number of download per country for the same period for abn only.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/images/country_dowloads_abn.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Here is the total count over the week days for this period. As one can see, number of downloads decreases of about (only?) a half during the weekend.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/images/downloads_weekdays_abn.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This graph represents the instantly (smoothed by minute) number of downloads in standardized UTC.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/images/downloads_hour_abn.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Finaly a world map with number of downloads on log scale.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/images/downloads_abn_mapW.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Below is the necessary code to extract, manipulate and plot the data.&lt;/p&gt;
+&lt;p&gt;  &lt;a id=&#34;my_chunk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;###########################################################################
+##Gilles Kratzer
+##Analysis on CRAN Rstudio log files in order to compute to the number of downloads
+##History :
+## --2016/11/13 document created
+###########################################################################
+
+###########################################################################
+##Purpose: Analysis of the downloads of R packages
+##Highly inspired by https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/
+##Highly inspired by http://blog.kongscn.me/2015/05/15/r-packages-stats.html
+##Highly inspired by https://www.r-bloggers.com/my-r-packages-worldmap-of-downloads/
+###########################################################################
+
+##cleaning
+rm(list = ls())
+graphics.off()
+
+##packages
+library(lubridate)
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(maptools)
+
+
+
+## ======================================================================
+## Plot world map
+## ======================================================================
+
+
+  counts &amp;lt;- cbind.data.frame(table(data$country))
+  names(counts) &amp;lt;- c(&amp;quot;country&amp;quot;, &amp;quot;count&amp;quot;)
+  
+  # you need to download a shapefile of the world map from Natural Earth (for instance)
+  # http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+  # and unzip it in the &amp;#39;shp.file.repos&amp;#39; repository
+  world&amp;lt;-readShapePoly(fn=paste(shp.file.repos, &amp;quot;ne_110m_admin_0_countries&amp;quot;, sep=&amp;quot;/&amp;quot;))
+  ISO_full &amp;lt;- as.character(world@data$iso_a2)
+  ISO_full[146] &amp;lt;- &amp;quot;SOM&amp;quot;  # The iso identifier for the Republic of Somaliland is missing
+  ISO_full[89]  &amp;lt;- &amp;quot;KV&amp;quot; # as for the Republic of Kosovo
+  ISO_full[39]  &amp;lt;- &amp;quot;CYP&amp;quot; # as for Cyprus
+  
+  colcode &amp;lt;- numeric(length(ISO_full))
+  names(colcode) &amp;lt;- ISO_full
+  dnl_places &amp;lt;- names(colcode[which(names(colcode) %in% as.character(counts$country))])
+  rownames(counts) &amp;lt;- counts$country
+  colcode[dnl_places] &amp;lt;- counts[dnl_places, &amp;quot;count&amp;quot;]
+  
+  world@data$id &amp;lt;- rownames(world@data)
+  world.points &amp;lt;- fortify(world, by=&amp;quot;id&amp;quot;)
+  names(colcode) &amp;lt;- rownames(world@data)
+  world.points$dnls &amp;lt;- colcode[world.points$id]
+  
+  world.map &amp;lt;-  ggplot(data=world.points) +
+    geom_polygon(aes(x = long, y = lat, group=group, fill=dnls), color=&amp;quot;black&amp;quot;) +
+    coord_equal() + #theme_minimal() +
+    scale_fill_gradient(low=&amp;quot;white&amp;quot;, high=&amp;quot;#56B1F7&amp;quot;, name=&amp;quot;Downloads&amp;quot;) +
+    labs(title=paste(pkgname, &amp;quot; downloads from the &amp;#39;0-Cloud&amp;#39; CRAN mirror by country\nfrom &amp;quot;, date.start, &amp;quot; to &amp;quot;, date.stop,&amp;quot;\n(Total downloads: &amp;quot;, sum(counts$count), &amp;quot;)&amp;quot;, sep=&amp;quot;&amp;quot;))
+world.map&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When do R programmers work?</title>
+      <link>/post/download/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/download/</guid>
+      <description>&lt;p&gt;&lt;a id=&#34;IDdownload&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This post is highly inspired by &lt;a href=&#34;https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/&#34;&gt;this post&lt;/a&gt; and &lt;a href=&#34;http://blog.kongscn.me/2015/05/15/r-packages-stats.html&#34;&gt;this post&lt;/a&gt;. &lt;a href=&#34;#my_chunk&#34;&gt;Here&lt;/a&gt; is the necessary code to produce those graphs (be aware that it is time &lt;strong&gt;and&lt;/strong&gt; memory consuming!).&lt;/p&gt;
+&lt;p&gt;On &lt;a href=&#34;https://blog.rstudio.org/2013/06/10/rstudio-cran-mirror/&#34;&gt;June 10 2013&lt;/a&gt;, &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; provides CRAN mirror logs download from 2012-10-01. Then it is possible to analyze this &lt;strong&gt;rich and huge&lt;/strong&gt; amount of data. On an individual level, one can track the popularity of their (preferred package). Here one can track the number of download of the three most downloaded R packages.&lt;/p&gt;
+&lt;p&gt;Here is the daily counts for the three most downloaded R packages, for May the 1 to September the 4th 2016. As one can see, there is an obvious weekly seasonality.&lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;center&gt;
+&lt;img src=&#34;images/dowloads_top3.png&#34; /&gt;
+&lt;/center&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is the ordered total number of download per country for the same period. Rcpp seems to be the most used R package in all countries except Korea.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div style=&#34;width:800px; height=600px&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;images/country_dowloads_top3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Here is the total count over the week days for this period. As one can see, number of downloads decreases of about a half during the weekend.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;images/downloads_weekdays_top3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Finally, this graph represents the instantly (smoothed by minute) number of downloads in standardized UTC. As one can see, less downloads during night and lunch time.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;images/downloads_hour_top3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Below is the necessary code to extract, manipulate and plot the data.&lt;/p&gt;
+&lt;p&gt;  &lt;a id=&#34;my_chunk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;###########################################################################
+##Gilles Kratzer
+##Analysis on CRAN Rstudio log files in order to compute to the number of downloads
+##History :
+## --2016/09/06 document created
+## --2016/09/09 adding material
+## --2016/09/21 plotting data
+###########################################################################
+
+###########################################################################
+##Purpose: Analysis of the downloads of R packages
+##Highly inspired by https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/
+##Highly inspired by http://blog.kongscn.me/2015/05/15/r-packages-stats.html
+###########################################################################
+
+##cleaning
+rm(list = ls())
+graphics.off()
+
+##packages
+library(lubridate)
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+
+## ======================================================================
+## Step 1: Download all log files
+## ======================================================================
+
+
+# Here&amp;#39;s an easy way to get all the URLs in R
+# It downloads only the missing files
+# !!! very long !!!
+
+start &amp;lt;- as.Date(&amp;#39;2016-05-01&amp;#39;)
+today &amp;lt;- as.Date(&amp;#39;2016-10-15&amp;#39;)
+
+all_days &amp;lt;- seq(start, today, by = &amp;#39;day&amp;#39;)
+
+year &amp;lt;- as.POSIXlt(all_days)$year + 1900
+urls &amp;lt;- paste0(&amp;#39;http://cran-logs.rstudio.com/&amp;#39;, year, &amp;#39;/&amp;#39;, all_days, &amp;#39;.csv.gz&amp;#39;)
+
+# only download missing files
+missing_days&amp;lt;-setdiff(as.character(all_days), tools::file_path_sans_ext(dir(&amp;quot;../3m/&amp;quot;), TRUE))
+
+dir.create(&amp;quot;../3m/&amp;quot;)
+for (i in 1:length(missing_days)) {
+  print(paste0(i, &amp;quot;/&amp;quot;, length(missing_days)))
+  download.file(urls[i], paste0(&amp;#39;../3m/&amp;#39;, missing_days[i], &amp;#39;.csv.gz&amp;#39;))
+}
+
+
+
+## ======================================================================
+## Step 2: Make a data table
+## ======================================================================
+
+#!!! time and memory consuming
+
+DT = data.table()
+files = list.files(&amp;quot;../3m&amp;quot;, pattern=&amp;#39;*.gz&amp;#39;, full.names=TRUE)
+
+for (file in files){
+  print(paste(&amp;quot;Reading&amp;quot;, file, &amp;quot;...&amp;quot;))
+  dt = tbl_dt(read.csv(file, as.is=TRUE))
+  dt = dt[, `:=`(datetime=ymd_hms(paste(date, time)),
+                 r_version=as.factor(r_version),
+                 r_arch=as.factor(r_arch),
+                 r_os=as.factor(r_os),
+                 package=as.factor(package),
+                 date=NULL, time=NULL, ip_id=NULL, version=NULL)]
+  DT = rbind(DT, dt)
+}
+rm(dt)
+DT = tbl_dt(DT)
+setkey(DT, package, country)
+save(DT, file=&amp;quot;../3m/3m_final.RData&amp;quot;)
+gc() # !!!
+
+## ======================================================================
+## Step 3: Analysis 
+## ======================================================================
+
+load(file = &amp;quot;../3m/3m_final.RData&amp;quot;)
+
+by_package = DT[, .N, keyby=package][order(-N)]
+
+# Top downloads
+by_package
+
+top3 = DT[.(c(&amp;quot;Rcpp&amp;quot;,&amp;quot;plyr&amp;quot;, &amp;quot;ggplot2&amp;quot;))]
+top3[, `:=`(date=as.Date(datetime))]
+
+top3_stat = top3[, .N, by=.(package, date)]
+qplot(x=date, y=N, data=top3_stat, geom=&amp;#39;line&amp;#39;, color=package)
+
+ggsave(filename = &amp;quot;dowloads_top3.pdf&amp;quot;)
+
+by_package &amp;lt;- DT[, .N, keyby=package][order(-N)]
+
+top3[, `:=`(date=as.Date(datetime))]
+pack_stat&amp;lt;-top3[, .N, by=.(package, date)]
+qplot(x=date, y=N, data=pack_stat, geom=&amp;#39;line&amp;#39;, color=package)
+
+ggsave(filename = &amp;quot;dowloads.pdf&amp;quot;)
+
+##country
+pack_stat&amp;lt;-top3[,.N,keyby=.(country, package)][order(-N)]
+pack_stat_count_country&amp;lt;-top3[,.N,keyby=.(country)][order(-N)]
+
+pack_stat$country&amp;lt;-factor(x = pack_stat$country,levels = pack_stat_count_country$country)
+m = ggplot(pack_stat[1:40], aes(x=country, y=N, fill=package))
+m + geom_bar(stat=&amp;quot;identity&amp;quot;) + coord_flip()
+ggsave(filename = &amp;quot;country_dowloads_top3.pdf&amp;quot;)
+
+##Download per day
+top3$Weekdays &amp;lt;- weekdays(top3$datetime)
+
+pack_stat&amp;lt;-top3[, .N, by=.(package, Weekdays)]
+pack_stat$Weekdays&amp;lt;-factor(pack_stat$Weekdays, levels = c(&amp;quot;Monday&amp;quot;, &amp;quot;Tuesday&amp;quot;, &amp;quot;Wednesday&amp;quot;, &amp;quot;Thursday&amp;quot;, 
+                                                          &amp;quot;Friday&amp;quot;, &amp;quot;Saturday&amp;quot;,&amp;quot;Sunday&amp;quot;))
+ggplot(aes(x=Weekdays, y=N, fill=package), data=pack_stat)+
+  geom_bar(stat=&amp;quot;identity&amp;quot;)+
+  theme_bw()+
+  xlab(NULL)
+
+ggsave(filename = &amp;quot;downloads_weekdays_top3.pdf&amp;quot;)
+
+##downloads per minutes 
+top3$specific_time &amp;lt;- hour(top3$datetime)+ minute(top3$datetime)/60
+  
+pack_stat&amp;lt;-top3[, .N, by=.(package, specific_time)]
+qplot(x=specific_time, y=N, data=pack_stat, geom=&amp;#39;line&amp;#39;,color=package)+
+  scale_x_continuous(breaks = c(0,3,6, 9, 12, 15,18,21,24), labels=c(
+                                          &amp;quot;00:00&amp;quot;,
+                                          &amp;quot;03:00&amp;quot;,
+                                          &amp;quot;06:00&amp;quot;,
+                                          &amp;quot;09:00&amp;quot;,
+                                          &amp;quot;12:00&amp;quot;,
+                                          &amp;quot;15:00&amp;quot;,
+                                          &amp;quot;18:00&amp;quot;,
+                                          &amp;quot;21:00&amp;quot;,
+                                          &amp;quot;24:00&amp;quot;))+
+  xlab(NULL)
+  
+ggsave(filename = &amp;quot;downloads_hour_top3.pdf&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>abn</title>
+      <link>/project/abn/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/project/abn/</guid>
+      <description>&lt;p&gt;The study of the causes and effect of health and disease condition is a cornerstone of the epidemiology. Classical approaches, such as regression techniques have been successfully used to model the impact of health determinants over the whole population. However, recently there is a growing recognition of biological, behavioural factors, at multiple levels that can impact the health condition. These epidemiological data are, by nature, highly complex and correlated. Classical regression framework have shown limited abilities to embrace the correlated multivariate nature of high dimensional epidemiological variables. On the other hand, models driven by expert knowledge often fail to efficiently manage the complexity and correlation of the epidemiological data. Additive Bayesian Networks (ABN) addresses these challenges in producing a data selected set of multivariate models presented using Directed Acyclic Graphs (DAGs). ABN is a machine learning approach to empirically identifying associations in complex and high dimensional datasets. It is actually distributed as an R package available on CRAN.
+The very natural extension to abn R package is to implement a frequentist approach using the classical GLM, then to implement classical scores as AIC, BIC etc. This extension could have many side benefits, one can imagine to boost different scores to find the best supported BN, it is easier to deal with data separation in a GLM setting, multilevel of clustering can be tackled with a mixed model setting, there exists highly efficient estimation methods for fitting GLM. More generally, if the main interest relies on the score and not on the shape of the posterior density, then a frequentist approach can be a good alternative. Surprisingly, there exists few available resources to display and analyse epidemiological data in an ABN framework. There is a need for comprehensive approach to display abn outputs. Indeed as the ABN framework is aimed for non-statistician to analyse complex data, one major challenge is to provide simple graphical tools to analyse epidemiological data. Besides that, there is a lack of resource addressing which class of problem can be tackle using ABN method, in terms of sample size, number of variables, expected density of the learned network.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -62,262 +544,21 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/project/varrank/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <description>&lt;p&gt;A common challenge encountered when working with high dimensional datasets is that of variable selection. All relevant confounders must be taken into account to allow for unbiased estimation of model parameters, while balancing with the need for parsimony and producing interpretable models. This task is known to be one of the most controversial and difficult tasks in epidemiological analysis.&lt;/p&gt;
 
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Variable selection approaches can be categorized into three broad classes: filter-based methods, wrapper-based methods, and embedded methods. They differ in how the methods combine the selection step and the model inference. An appealing filter approach is the minimum redundancy maximum relevance (mRMRe) algorithm. The purpose of this heuristic approach is to select the most relevant variables from a set by penalising according to the amount of redundancy variables share with previously selected variables. In epidemiology, the most frequently used approaches to tackle variable selection based on modeling use goodness-of fit metrics. The paradigm is that important variables for modeling are variables that are causally connected and predictive power is a proxy for causal links. On the other hand, the mRMRe algorithm aims to measure the importance of variables based on a relevance penalized by redundancy measure which makes it appealing for epidemiological modeling.&lt;/p&gt;
 
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;p&gt;varrank has a flexible implementation of the mRMRe algorithm which perform variable ranking based on mutual information. The package is particularly suitable for exploring multivariate datasets requiring a holistic analysis. The two main problems that can be addressed by this package are the selection of the most representative variables for modeling a collection of variables of interest, i.e., dimension reduction, and variable ranking with respect to a set of variables of interest.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <title>Improvement of the open circuit voltage by modifying the transparent indium–tin oxide front electrode in amorphous n–i–p solar cells</title>
+      <link>/publication/haug/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0100</pubDate>
       
-      <guid>/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the latest demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes. Then head on over to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start guide&lt;/a&gt; or take a look at the &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Key features:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
-&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
-&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Dark&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Coffee theme with Playfair font&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;1950s&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
-&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
-&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
-&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
-
-&lt;p&gt;Prerequisites:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd My_Website
-git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
-
-&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
-
-&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
-
-&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
-
-&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
-
-&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification-copy-2/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
-      
-      <guid>/publication/person-re-identification-copy-2/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>/publication/haug/</guid>
+      <description></description>
     </item>
     
   </channel>

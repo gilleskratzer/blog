@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducibility in research on So what ...</title>
+    <link>/tags/reproducibility-in-research/</link>
+    <description>Recent content in Reproducibility in research on So what ...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
+    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reproducibility-in-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reproducibility in Science</title>
+      <link>/post/repro/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/repro/</guid>
+      <description>The Google Ngram Viewer, started in December 2010, is an online search engine that returns the yearly relative frequency of a set of words, found in a selected printed sources, called corpus of books, between 1500 and 2016 (many language available). More specifically, it returns the relative frequency of the yearly ngram (continuous set of n words. For example, I is a 1-gram and I am is a 2-grams). This means that if you search for one word (called unigram), you get the percentage of this word to all the other word found in the corpus of books for a certain year.</description>
+    </item>
+    
+  </channel>
+</rss>

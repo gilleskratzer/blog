@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 03 Sep 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>abn use accross the world?</title>
+      <link>/post/abn_used/</link>
+      <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/abn_used/</guid>
+      <description>This post is highly inspired by this post from R-Bloggers and my previous post. Again the necessary code is available here.
+As maintenair of an R package, it is always interesting to know if it is used and by whom? This post shows some plots to asses R package usage.
+I started by a small review to list the similar other R packages. I found that bnlearn, deal and grbase are comparable to abn.</description>
+    </item>
     
     <item>
       <title>Hello R Markdown</title>
