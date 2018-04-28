@@ -235,7 +235,7 @@ enableGitInfo = false
     
   [[params.social]]
     icon = "linkedin"
-    icon_pack = "ai"
+    icon_pack = "fa"
     link = "https://www.linkedin.com/in/gilleskratzer/"
 
   [[params.social]]
@@ -252,6 +252,11 @@ enableGitInfo = false
     icon = "researchgate"
     icon_pack = "ai"
     link = "https://www.researchgate.net/profile/Gilles_Kratzer"
+    
+    [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "http://orcid.org/0000-0002-5929-8935"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the

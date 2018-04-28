@@ -42,6 +42,12 @@ weight = 5
 
 # Biography
 
-Gilles Kratzer is a PhD student at Zurich University in the applied statistics group. His research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, he decided to enhance his education in Physics by doing a master degree in Biostatistics at Zurich University. Then he continues his education in statistics with a PhD in epidemiology.
+I am a PhD student at Zurich University in the applied statistics group. My research interests includes Multivariate and Bayesian analysis, systems epidemiology analysis, software developments and open research. After working several years in clinical research at different positions, I decided to enhance my education in Physics by doing a master degree in Biostatistics at Zurich University. Then I continue my education in statistics with a PhD in epidemiology. Beside my research I am the maintainer of the statistical consulting service of the UZH.
 
 Full <a href = "https://curriculum.netlify.com/" target="_blank"> digital CV</a>.
+
+# About me
+
+I yell at people who said "Statistics can be made to prove anything ...". Unfortunately, statistics are used much like a drunk man uses a lamppost: for support, not illumination. I invest a lot of time devellopping tools for data visualisation and try to communicate them. In my work, I try to convince clients and colloborators that more than 50% of a statistician job is actually to try to represent data ... and the modelling/inference part comes after.
+
+Beside statistics, I believe that [wikipedia](https://www.wikipedia.org/) is one of the most *impressive* *collective* effort of the Humanity. I am a big fan of [github](https://github.com/). To ease the pressure, I like to do rock climbing, squash, yoga and running.
