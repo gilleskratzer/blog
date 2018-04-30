@@ -15,7 +15,7 @@ weight = 60
 
 +++
 
-- author of <a href = "https://CRAN.R-project.org/package=varrank" target="_blank"> varrank</a>  R package that perform variable selection with applications in systemic datasets
-- maintainer of <a href = "https://CRAN.R-project.org/package=abn" target="_blank"> abn</a> R package that models multivariate data with Additive Bayesian Networks
-- contributor of <a href = "https://CRAN.R-project.org/package=ATR" target="_blank"> ATR</a> R package for plotting party trees in left-right orientation instead of the classical top-down layout
+- author of <a href = "https://CRAN.R-project.org/package=varrank" target="_blank"> varrank</a>  R package that perform variable selection with applications in systemic datasets [![](https://cranlogs.r-pkg.org/badges/varrank?color=lightgrey)](https://cran.rstudio.com/web/packages/varrank/index.html?color=brightgreen)
+- maintainer of <a href = "https://CRAN.R-project.org/package=abn" target="_blank"> abn</a> R package that models multivariate data with Additive Bayesian Networks [![](https://cranlogs.r-pkg.org/badges/abn?color=lightgrey)](https://cran.rstudio.com/web/packages/abn/index.html)
+- contributor of <a href = "https://CRAN.R-project.org/package=ATR" target="_blank"> ATR</a> R package for plotting party trees in left-right orientation instead of the classical top-down layout [![](https://cranlogs.r-pkg.org/badges/ATR?color=lightgrey)](https://cran.rstudio.com/web/packages/ATR/index.html)
 
