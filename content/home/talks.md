@@ -21,9 +21,14 @@ list_format = 0
 +++
 **Futur events**:
 
-- 2-3 July 2018, BAYSM 2018, Warwick. *Poster*: Comparison between Suitable Priors for Additive Bayesian Networks.
+- 2-3 July 2018, BAYSM 2018, Warwick. **Poster**: Comparison between Suitable Priors for Additive Bayesian Networks.
 
 **Past events**:
 
-- 21-23 March 2018. Society for Veterinary Epidemiology and Preventive Medicine (SVEPM), Tallinn. *Poster*: Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology. 
-- 24-26 July 2017. TIES GRASPA, Bergamo. *Poster*: Additive Bayesian Network approach applied to time series and longitudinal datasets.
+- 30 May 2018. [Brown Bag Seminar](https://tensorchiefs.github.io/bbs/) in ZHAW. **Presentation**: Bayesian Networks Learning in a Nutshell.
+
+- 02 May 2018. Institute of Global Health, Geneva. **Presentation**: Advances in Additive Bayesian Network applied to observational systems epidemiology datasets.
+
+- 21-23 March 2018. Society for Veterinary Epidemiology and Preventive Medicine (SVEPM), Tallinn. **Poster**: [Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology](http://www.svepm.org.uk/f-Download-d-file.html?id=1456). 
+
+- 24-26 July 2017. TIES GRASPA, Bergamo. **Poster**: Additive Bayesian Network approach applied to time series and longitudinal datasets.

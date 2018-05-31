@@ -27,7 +27,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/about/</guid>
-      <description>About me I like to call myself data engineer. It is a way for me to mix my engineer degree in Physics with my degree in Biostatistics. I like to take a problem and to bring a practical solution. I like the machine learning approaches which I found very powerful and have high potential for solving practical challenges in data analysis. But I try to not forget that this is in fact re-branding of statistics methods.</description>
+      <description>About me I like to call myself data engineer. It is a way for me to mix my engineer degree in Physics with my degree in Biostatistics. I like to take a problem and to bring a practical solution. I like the machine learning approaches which I found very powerful and have high potential for solving practical challenges in data analysis. But I try to not forget that this is essentially re-branding of statistical methods.</description>
     </item>
     
     <item>
@@ -74,7 +74,9 @@
       <guid>/home/talks/</guid>
       <description>Futur events:
  2-3 July 2018, BAYSM 2018, Warwick. Poster: Comparison between Suitable Priors for Additive Bayesian Networks.  Past events:
- 21-23 March 2018. Society for Veterinary Epidemiology and Preventive Medicine (SVEPM), Tallinn. Poster: Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology. 24-26 July 2017. TIES GRASPA, Bergamo. Poster: Additive Bayesian Network approach applied to time series and longitudinal datasets.  </description>
+ 30 May 2018. Brown Bag Seminar in ZHAW. Presentation: Bayesian Networks Learning in a Nutshell.
+ 02 May 2018. Institute of Global Health, Geneva. Presentation: Advances in Additive Bayesian Network applied to observational systems epidemiology datasets.
+ 21-23 March 2018. Society for Veterinary Epidemiology and Preventive Medicine (SVEPM), Tallinn.</description>
     </item>
     
   </channel>

@@ -11,12 +11,45 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A battle to the death</title>
+      <link>/post/pval/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/pval/</guid>
+      <description>&lt;p&gt;&lt;em&gt;It is unanimously agreed that statistics depends somehow on probability. But, as to what probability is and how it is connected with statistics, there has seldom been such complete disagreement and breakdown of communication since the Tower of Babel.&lt;/em&gt; Savage, The Foundations of Statistics (1972)&lt;/p&gt;
+&lt;p&gt;Recentely, I had to give a presentation about &lt;strong&gt;P value&lt;/strong&gt; and I discovered during the preparation of this talk a &lt;strong&gt;battle to the death&lt;/strong&gt; within statistics. It is enough unique to be reported and commented.&lt;/p&gt;
+&lt;p&gt;A little bit of &lt;a href=&#34;https://en.wikipedia.org/wiki/History_of_statistics&#34;&gt;history of statistics&lt;/a&gt;, between the 18th to the 19th century, Bernoulli, Bayes, Laplace, Boole, Venn and others developed lots of ideas about probability and statistics. At this time &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Statistical_inference&#34;&gt;statistical inference&lt;/a&gt;&lt;/strong&gt; was &lt;em&gt;Bayesian&lt;/em&gt;. Then it required prior probability. &lt;a href=&#34;https://en.wikipedia.org/wiki/Ronald_Fisher&#34;&gt;Sir Ronald Fisher&lt;/a&gt; didn’t want to specify a prior, so he constructed a new framework for statistical inference around 1920s. Part of this is what he called significance testing and significance levels, which we now call P-values. Jerzy Neyman and Egon Pearson “extended” Fisher’s ideas and wrote about hypothesis testing (1930s).&lt;/p&gt;
+&lt;p&gt;Fisher wanted a way to test the results from experiments. The motivation questions he had were: How does the data match to my hypothesis (i.e the assumed model)? But he still refused to assume a prior probability. On the contrary Neyman does not assume many repeated experiments from the same population. He wanted the researcher to have a tool to help evaluate the strength of evidence.&lt;/p&gt;
+&lt;p&gt;Fisher and Neyman couldn’t resolve the differences between their ideas. They argued for 25 years until Fisher died in 1962. Fisher proposed a way to measure how likely the results of an experiment are under some assumptions. Neyman proposed to use cut off levels to decide whether the data matched to a hypothesis, with the cut offs chosen to limit errors.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>varrank: an R package for variable ranking based on mutual information with applications to observed systemic datasets</title>
       <link>/publication/varrank/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/publication/varrank/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducibility in Science</title>
+      <link>/post/natruecommunication/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/natruecommunication/</guid>
+      <description>&lt;p&gt;As a biostatistician I am particularly concerned by reproducibility in research (&lt;strong&gt;RR&lt;/strong&gt;). I try very hard to do reproducible research. It is often hard. Often this is not clear how to achieve &lt;strong&gt;RR&lt;/strong&gt;. Within our group, we had recently some discussions about &lt;strong&gt;RR&lt;/strong&gt;. Below is a small &lt;em&gt;personal&lt;/em&gt; manifesto for &lt;strong&gt;RR&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;manifesto-for-reproducible-research&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Manifesto for reproducible research&lt;/h1&gt;
+&lt;p&gt;I believe that good science is made of trustable science. I believe that the most trustable academic research can only be achieved with a rigorous application of scientific methods. I believe that a minimal condition of the scientific methods is reproducibility of the research. While being viewed as obvious consent within Academia, in practice it requires extremely well organised scientists. Statistics is by nature an interdisciplinary effort and as many other disciplines it faces the reproducibility crisis. If one want to produce relevant, widely accessible and trustable scientific outputs one has to take it very seriously.&lt;/p&gt;
+&lt;p&gt;I view the reproducible research approach as a comprehensive philosophy. It includes the individual research of academic group members but also external collaborations. An essential part of reproducibility is the transparency of data. Therefore I tried to use publicly available and trustable data wherever possible and feasible. Likewise, I make my data product openly accessible together with the necessary documentation.&lt;/p&gt;
+&lt;p&gt;I believe that scripting is the optimal way to achieve reproducible workflow. In order to create easily reproducible software packages, I follow the dynamic programming approach, which is a method to solve large scale problems by atomising them into simple tasks. Using version control allows me to document changes, ensuring historical reproducibility and efficient collaboration. I pay a special attention to publish the necessary documentation together with my softwares.&lt;/p&gt;
+&lt;p&gt;Producing and delivering reproducible code implies being as independent as possible of the user environment. This is why I use platform independent and open source programming languages. It also requires to produce well documented code that corresponds to commonly used code styles, which facilitates user readability. I believe that the tests used to develop code are part of the code and then should be published.&lt;/p&gt;
+&lt;p&gt;I believe that complex scientific challenges require large collaborative work to be tackled. I believe that reproducibility is of higher importance there. This is why I aim at working in an organised manner which means to be sparse with the documents I exchange to ensure efficient partnership. I believe that continuous integration is a way to save precious time.&lt;/p&gt;
+&lt;p&gt;Reproducible research is a fast moving research area and I invest time for scooting new approaches and exchange with other research groups.&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -347,14 +380,14 @@ world.map&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is the daily counts for the three most downloaded R packages, for May the 1 to September the 4th 2016. As one can see, there is an obvious weekly seasonality.&lt;/p&gt;
 &lt;div style=&#34;width:800px; height=600px&#34;&gt;
 &lt;center&gt;
-&lt;img src=&#34;images/dowloads_top3.png&#34; /&gt;
+&lt;img src=&#34;/img/images/dowloads_top3.png&#34; /&gt;
 &lt;/center&gt;
 &lt;/div&gt;
 &lt;p&gt;Here is the ordered total number of download per country for the same period. Rcpp seems to be the most used R package in all countries except Korea.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;div style=&#34;width:800px; height=600px&#34;&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;images/country_dowloads_top3.png&#34; /&gt;
+&lt;img src=&#34;/img/images/country_dowloads_top3.png&#34; /&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -362,14 +395,14 @@ world.map&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is the total count over the week days for this period. As one can see, number of downloads decreases of about a half during the weekend.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;images/downloads_weekdays_top3.png&#34; /&gt;
+&lt;img src=&#34;/img/images/downloads_weekdays_top3.png&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;Finally, this graph represents the instantly (smoothed by minute) number of downloads in standardized UTC. As one can see, less downloads during night and lunch time.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;images/downloads_hour_top3.png&#34; /&gt;
+&lt;img src=&#34;/img/images/downloads_hour_top3.png&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt; &lt;/p&gt;
@@ -548,9 +581,9 @@ The very natural extension to abn R package is to implement a frequentist approa
       <guid>/project/varrank/</guid>
       <description>&lt;p&gt;A common challenge encountered when working with high dimensional datasets is that of variable selection. All relevant confounders must be taken into account to allow for unbiased estimation of model parameters, while balancing with the need for parsimony and producing interpretable models. This task is known to be one of the most controversial and difficult tasks in epidemiological analysis.&lt;/p&gt;
 
-&lt;p&gt;Variable selection approaches can be categorized into three broad classes: filter-based methods, wrapper-based methods, and embedded methods. They differ in how the methods combine the selection step and the model inference. An appealing filter approach is the minimum redundancy maximum relevance (mRMRe) algorithm. The purpose of this heuristic approach is to select the most relevant variables from a set by penalising according to the amount of redundancy variables share with previously selected variables. In epidemiology, the most frequently used approaches to tackle variable selection based on modeling use goodness-of fit metrics. The paradigm is that important variables for modeling are variables that are causally connected and predictive power is a proxy for causal links. On the other hand, the mRMRe algorithm aims to measure the importance of variables based on a relevance penalized by redundancy measure which makes it appealing for epidemiological modeling.&lt;/p&gt;
+&lt;p&gt;Variable selection approaches can be categorized into three broad classes: filter-based methods, wrapper-based methods, and embedded methods. They differ in how the methods combine the selection step and the model inference. An appealing filter approach is the minimum redundancy maximum relevance (mRMRe) algorithm. The purpose of this heuristic approach is to select the most relevant variables from a set by penalising according to the amount of redundancy variables share with previously selected variables. In epidemiology, the most frequently used approaches to tackle variable selection based on modelling use goodness-of fit metrics. The paradigm is that important variables for modelling are variables that are causally connected and predictive power is a proxy for causal links. On the other hand, the mRMRe algorithm aims to measure the importance of variables based on a relevance penalized by redundancy measure which makes it appealing for epidemiological modelling.&lt;/p&gt;
 
-&lt;p&gt;varrank has a flexible implementation of the mRMRe algorithm which perform variable ranking based on mutual information. The package is particularly suitable for exploring multivariate datasets requiring a holistic analysis. The two main problems that can be addressed by this package are the selection of the most representative variables for modeling a collection of variables of interest, i.e., dimension reduction, and variable ranking with respect to a set of variables of interest.&lt;/p&gt;
+&lt;p&gt;varrank has a flexible implementation of the mRMRe algorithm which perform variable ranking based on mutual information. The package is particularly suitable for exploring multivariate datasets requiring a holistic analysis. The two main problems that can be addressed by this package are the selection of the most representative variables for modelling a collection of variables of interest, i.e., dimension reduction, and variable ranking with respect to a set of variables of interest.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://cran.rstudio.com/web/packages/varrank/index.html&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://cranlogs.r-pkg.org/badges/varrank&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>

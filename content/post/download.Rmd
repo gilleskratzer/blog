@@ -18,7 +18,7 @@ On [June 10 2013](https://blog.rstudio.org/2013/06/10/rstudio-cran-mirror/), [RS
 Here is the daily counts for the three most downloaded R packages, for May the 1 to September the 4th 2016. As one can see, there is an obvious weekly seasonality.
 
 <div style="width:800px; height=600px">
-<center>![](images/dowloads_top3.png)</center>
+<center>![](/img/images/dowloads_top3.png)</center>
 </div>
 
 
@@ -27,7 +27,7 @@ Here is the ordered total number of download per country for the same period. Rc
 \ 
 
 <div style="width:800px; height=600px">
-![](images/country_dowloads_top3.png)
+![](/img/images/country_dowloads_top3.png)
 </div>
 
 \ 
@@ -36,7 +36,7 @@ Here is the total count over the week days for this period. As one can see, numb
 
 \ 
 
-![](images/downloads_weekdays_top3.png)
+![](/img/images/downloads_weekdays_top3.png)
 
 \ 
 
@@ -44,7 +44,7 @@ Finally, this graph represents the instantly (smoothed by minute) number of down
 
 \ 
 
-![](images/downloads_hour_top3.png)
+![](/img/images/downloads_hour_top3.png)
 
 \ 
 

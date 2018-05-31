@@ -5,8 +5,26 @@
     
     <url>
     
+      <loc>/post/pval/</loc>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/varrank/</loc>
       <lastmod>2018-04-23T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/natruecommunication/</loc>
+      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -198,6 +216,16 @@
     
     <url>
     
+      <loc>/tags/p-value/</loc>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -208,8 +236,8 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -218,8 +246,8 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
-      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+      <loc>/categories/r/</loc>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -289,7 +317,7 @@
     <url>
     
       <loc>/tags/statistical-philosophy/</loc>
-      <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
