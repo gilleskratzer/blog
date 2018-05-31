@@ -24,7 +24,7 @@ math = false
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "varrank_banner.jpg"
-caption = "Many shapes and many colours"
+caption = "Mount Fuji"
 
 +++
 A common challenge encountered when working with high dimensional datasets is that of variable selection. All relevant confounders must be taken into account to allow for unbiased estimation of model parameters, while balancing with the need for parsimony and producing interpretable models. This task is known to be one of the most controversial and difficult tasks in epidemiological analysis. 
