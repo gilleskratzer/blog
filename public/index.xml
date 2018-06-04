@@ -11,6 +11,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pododermatitis in group housed rabbit does in Switzerland – prevalence, severity and risk factors</title>
+      <link>/publication/ruchti1/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/ruchti1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Progression and risk factors of pododermatitis in part-time group housed rabbit does in Switzerland</title>
+      <link>/publication/ruchti2/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/ruchti2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revealing the structure of the associations between housing system, facilities, management and welfare of commercial laying hens using Additive Bayesian Networks</title>
+      <link>/publication/comin/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/comin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A battle to the death</title>
       <link>/post/pval/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
@@ -571,31 +598,6 @@ The very natural extension to abn R package is to implement a frequentist approa
 
 &lt;p&gt;&lt;a href=&#34;https://cran.rstudio.com/web/packages/abn/index.html&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://cranlogs.r-pkg.org/badges/abn&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>varrank</title>
-      <link>/project/varrank/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/project/varrank/</guid>
-      <description>&lt;p&gt;A common challenge encountered when working with high dimensional datasets is that of variable selection. All relevant confounders must be taken into account to allow for unbiased estimation of model parameters, while balancing with the need for parsimony and producing interpretable models. This task is known to be one of the most controversial and difficult tasks in epidemiological analysis.&lt;/p&gt;
-
-&lt;p&gt;Variable selection approaches can be categorized into three broad classes: filter-based methods, wrapper-based methods, and embedded methods. They differ in how the methods combine the selection step and the model inference. An appealing filter approach is the minimum redundancy maximum relevance (mRMRe) algorithm. The purpose of this heuristic approach is to select the most relevant variables from a set by penalising according to the amount of redundancy variables share with previously selected variables. In epidemiology, the most frequently used approaches to tackle variable selection based on modelling use goodness-of fit metrics. The paradigm is that important variables for modelling are variables that are causally connected and predictive power is a proxy for causal links. On the other hand, the mRMRe algorithm aims to measure the importance of variables based on a relevance penalized by redundancy measure which makes it appealing for epidemiological modelling.&lt;/p&gt;
-
-&lt;p&gt;varrank has a flexible implementation of the mRMRe algorithm which perform variable ranking based on mutual information. The package is particularly suitable for exploring multivariate datasets requiring a holistic analysis. The two main problems that can be addressed by this package are the selection of the most representative variables for modelling a collection of variables of interest, i.e., dimension reduction, and variable ranking with respect to a set of variables of interest.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://cran.rstudio.com/web/packages/varrank/index.html&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://cranlogs.r-pkg.org/badges/varrank&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Improvement of the open circuit voltage by modifying the transparent indium–tin oxide front electrode in amorphous n–i–p solar cells</title>
-      <link>/publication/haug/</link>
-      <pubDate>Tue, 01 Nov 2011 00:00:00 +0100</pubDate>
-      
-      <guid>/publication/haug/</guid>
-      <description></description>
     </item>
     
   </channel>
