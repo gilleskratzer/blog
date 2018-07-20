@@ -1,9 +1,9 @@
 +++
-title = "Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology"
-date = 2018-06-01T00:00:00
+title = "Comparison between Suitable Priors for Additive Bayesian Networks"
+date = 2018-07-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Gilles Kratzer", "Reinhard Furrer"]`.
-authors = ["G Kratzer", "R Furrer"]
+authors = ["G Kratzer", "R Furrer", "M Pittavino"]
 
 # Publication type.
 # Legend:
@@ -33,7 +33,7 @@ selected = true
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["mleabn"]
+projects = ["catabn"]
 
 # Links (optional).
 #url_pdf = "https://arxiv.org/pdf/1804.07134.pdf"
