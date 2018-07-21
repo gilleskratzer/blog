@@ -33,12 +33,12 @@ selected = true
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["catabn"]
+projects = ["abn"]
 
 # Links (optional).
 #url_pdf = "https://arxiv.org/pdf/1804.07134.pdf"
 #url_preprint = "https://arxiv.org/abs/1804.07134 "
-url_code = "https://CRAN.R-project.org/package=abn"
+#url_code = "https://CRAN.R-project.org/package=abn"
 #url_dataset = "#"
 #url_project = ""
 #url_slides = "#"

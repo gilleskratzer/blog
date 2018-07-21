@@ -21,9 +21,11 @@ list_format = 0
 +++
 **Futur events**:
 
-- 2-3 July 2018, BAYSM 2018, Warwick. **Poster**: Comparison between Suitable Priors for Additive Bayesian Networks.
+- 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys.
 
 **Past events**:
+
+- 2-3 July 2018, BAYSM 2018, Warwick. **Poster**: Comparison between Suitable Priors for Additive Bayesian Networks.
 
 - 30 May 2018. [Brown Bag Seminar](https://tensorchiefs.github.io/bbs/) in ZHAW. **Presentation**: Bayesian Networks Learning in a Nutshell.
 

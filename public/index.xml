@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Comparison between Suitable Priors for Additive Bayesian Networks</title>
+      <link>/publication/catabn/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/catabn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Information-Theoretic Scoring Rules to Learn Additive Bayesian Network Applied to Epidemiology</title>
       <link>/publication/mleabn/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
@@ -401,198 +410,6 @@ library(maptools)
     scale_fill_gradient(low=&amp;quot;white&amp;quot;, high=&amp;quot;#56B1F7&amp;quot;, name=&amp;quot;Downloads&amp;quot;) +
     labs(title=paste(pkgname, &amp;quot; downloads from the &amp;#39;0-Cloud&amp;#39; CRAN mirror by country\nfrom &amp;quot;, date.start, &amp;quot; to &amp;quot;, date.stop,&amp;quot;\n(Total downloads: &amp;quot;, sum(counts$count), &amp;quot;)&amp;quot;, sep=&amp;quot;&amp;quot;))
 world.map&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>When do R programmers work?</title>
-      <link>/post/download/</link>
-      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/download/</guid>
-      <description>&lt;p&gt;&lt;a id=&#34;IDdownload&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This post is highly inspired by &lt;a href=&#34;https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/&#34;&gt;this post&lt;/a&gt; and &lt;a href=&#34;http://blog.kongscn.me/2015/05/15/r-packages-stats.html&#34;&gt;this post&lt;/a&gt;. &lt;a href=&#34;#my_chunk&#34;&gt;Here&lt;/a&gt; is the necessary code to produce those graphs (be aware that it is time &lt;strong&gt;and&lt;/strong&gt; memory consuming!).&lt;/p&gt;
-&lt;p&gt;On &lt;a href=&#34;https://blog.rstudio.org/2013/06/10/rstudio-cran-mirror/&#34;&gt;June 10 2013&lt;/a&gt;, &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; provides CRAN mirror logs download from 2012-10-01. Then it is possible to analyze this &lt;strong&gt;rich and huge&lt;/strong&gt; amount of data. On an individual level, one can track the popularity of their (preferred package). Here one can track the number of download of the three most downloaded R packages.&lt;/p&gt;
-&lt;p&gt;Here is the daily counts for the three most downloaded R packages, for May the 1 to September the 4th 2016. As one can see, there is an obvious weekly seasonality.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;center&gt;
-&lt;img src=&#34;/img/images/dowloads_top3.png&#34; /&gt;
-&lt;/center&gt;
-&lt;/div&gt;
-&lt;p&gt;Here is the ordered total number of download per country for the same period. Rcpp seems to be the most used R package in all countries except Korea.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/country_dowloads_top3.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Here is the total count over the week days for this period. As one can see, number of downloads decreases of about a half during the weekend.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/downloads_weekdays_top3.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Finally, this graph represents the instantly (smoothed by minute) number of downloads in standardized UTC. As one can see, less downloads during night and lunch time.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/downloads_hour_top3.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Below is the necessary code to extract, manipulate and plot the data.&lt;/p&gt;
-&lt;p&gt;  &lt;a id=&#34;my_chunk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;###########################################################################
-##Gilles Kratzer
-##Analysis on CRAN Rstudio log files in order to compute to the number of downloads
-##History :
-## --2016/09/06 document created
-## --2016/09/09 adding material
-## --2016/09/21 plotting data
-###########################################################################
-
-###########################################################################
-##Purpose: Analysis of the downloads of R packages
-##Highly inspired by https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/
-##Highly inspired by http://blog.kongscn.me/2015/05/15/r-packages-stats.html
-###########################################################################
-
-##cleaning
-rm(list = ls())
-graphics.off()
-
-##packages
-library(lubridate)
-library(data.table)
-library(dplyr)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-
-
-## ======================================================================
-## Step 1: Download all log files
-## ======================================================================
-
-
-# Here&amp;#39;s an easy way to get all the URLs in R
-# It downloads only the missing files
-# !!! very long !!!
-
-start &amp;lt;- as.Date(&amp;#39;2016-05-01&amp;#39;)
-today &amp;lt;- as.Date(&amp;#39;2016-10-15&amp;#39;)
-
-all_days &amp;lt;- seq(start, today, by = &amp;#39;day&amp;#39;)
-
-year &amp;lt;- as.POSIXlt(all_days)$year + 1900
-urls &amp;lt;- paste0(&amp;#39;http://cran-logs.rstudio.com/&amp;#39;, year, &amp;#39;/&amp;#39;, all_days, &amp;#39;.csv.gz&amp;#39;)
-
-# only download missing files
-missing_days&amp;lt;-setdiff(as.character(all_days), tools::file_path_sans_ext(dir(&amp;quot;../3m/&amp;quot;), TRUE))
-
-dir.create(&amp;quot;../3m/&amp;quot;)
-for (i in 1:length(missing_days)) {
-  print(paste0(i, &amp;quot;/&amp;quot;, length(missing_days)))
-  download.file(urls[i], paste0(&amp;#39;../3m/&amp;#39;, missing_days[i], &amp;#39;.csv.gz&amp;#39;))
-}
-
-
-
-## ======================================================================
-## Step 2: Make a data table
-## ======================================================================
-
-#!!! time and memory consuming
-
-DT = data.table()
-files = list.files(&amp;quot;../3m&amp;quot;, pattern=&amp;#39;*.gz&amp;#39;, full.names=TRUE)
-
-for (file in files){
-  print(paste(&amp;quot;Reading&amp;quot;, file, &amp;quot;...&amp;quot;))
-  dt = tbl_dt(read.csv(file, as.is=TRUE))
-  dt = dt[, `:=`(datetime=ymd_hms(paste(date, time)),
-                 r_version=as.factor(r_version),
-                 r_arch=as.factor(r_arch),
-                 r_os=as.factor(r_os),
-                 package=as.factor(package),
-                 date=NULL, time=NULL, ip_id=NULL, version=NULL)]
-  DT = rbind(DT, dt)
-}
-rm(dt)
-DT = tbl_dt(DT)
-setkey(DT, package, country)
-save(DT, file=&amp;quot;../3m/3m_final.RData&amp;quot;)
-gc() # !!!
-
-## ======================================================================
-## Step 3: Analysis 
-## ======================================================================
-
-load(file = &amp;quot;../3m/3m_final.RData&amp;quot;)
-
-by_package = DT[, .N, keyby=package][order(-N)]
-
-# Top downloads
-by_package
-
-top3 = DT[.(c(&amp;quot;Rcpp&amp;quot;,&amp;quot;plyr&amp;quot;, &amp;quot;ggplot2&amp;quot;))]
-top3[, `:=`(date=as.Date(datetime))]
-
-top3_stat = top3[, .N, by=.(package, date)]
-qplot(x=date, y=N, data=top3_stat, geom=&amp;#39;line&amp;#39;, color=package)
-
-ggsave(filename = &amp;quot;dowloads_top3.pdf&amp;quot;)
-
-by_package &amp;lt;- DT[, .N, keyby=package][order(-N)]
-
-top3[, `:=`(date=as.Date(datetime))]
-pack_stat&amp;lt;-top3[, .N, by=.(package, date)]
-qplot(x=date, y=N, data=pack_stat, geom=&amp;#39;line&amp;#39;, color=package)
-
-ggsave(filename = &amp;quot;dowloads.pdf&amp;quot;)
-
-##country
-pack_stat&amp;lt;-top3[,.N,keyby=.(country, package)][order(-N)]
-pack_stat_count_country&amp;lt;-top3[,.N,keyby=.(country)][order(-N)]
-
-pack_stat$country&amp;lt;-factor(x = pack_stat$country,levels = pack_stat_count_country$country)
-m = ggplot(pack_stat[1:40], aes(x=country, y=N, fill=package))
-m + geom_bar(stat=&amp;quot;identity&amp;quot;) + coord_flip()
-ggsave(filename = &amp;quot;country_dowloads_top3.pdf&amp;quot;)
-
-##Download per day
-top3$Weekdays &amp;lt;- weekdays(top3$datetime)
-
-pack_stat&amp;lt;-top3[, .N, by=.(package, Weekdays)]
-pack_stat$Weekdays&amp;lt;-factor(pack_stat$Weekdays, levels = c(&amp;quot;Monday&amp;quot;, &amp;quot;Tuesday&amp;quot;, &amp;quot;Wednesday&amp;quot;, &amp;quot;Thursday&amp;quot;, 
-                                                          &amp;quot;Friday&amp;quot;, &amp;quot;Saturday&amp;quot;,&amp;quot;Sunday&amp;quot;))
-ggplot(aes(x=Weekdays, y=N, fill=package), data=pack_stat)+
-  geom_bar(stat=&amp;quot;identity&amp;quot;)+
-  theme_bw()+
-  xlab(NULL)
-
-ggsave(filename = &amp;quot;downloads_weekdays_top3.pdf&amp;quot;)
-
-##downloads per minutes 
-top3$specific_time &amp;lt;- hour(top3$datetime)+ minute(top3$datetime)/60
-  
-pack_stat&amp;lt;-top3[, .N, by=.(package, specific_time)]
-qplot(x=specific_time, y=N, data=pack_stat, geom=&amp;#39;line&amp;#39;,color=package)+
-  scale_x_continuous(breaks = c(0,3,6, 9, 12, 15,18,21,24), labels=c(
-                                          &amp;quot;00:00&amp;quot;,
-                                          &amp;quot;03:00&amp;quot;,
-                                          &amp;quot;06:00&amp;quot;,
-                                          &amp;quot;09:00&amp;quot;,
-                                          &amp;quot;12:00&amp;quot;,
-                                          &amp;quot;15:00&amp;quot;,
-                                          &amp;quot;18:00&amp;quot;,
-                                          &amp;quot;21:00&amp;quot;,
-                                          &amp;quot;24:00&amp;quot;))+
-  xlab(NULL)
-  
-ggsave(filename = &amp;quot;downloads_hour_top3.pdf&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
