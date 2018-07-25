@@ -1,6 +1,6 @@
 +++
 title = "Additive Bayesian networks for antibiotic resistance and potential risk factors in Salmonella enterica isolates from layer hens in Uganda"
-date = 2018-07-31T00:00:00
+date = 2018-07-25T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["S Hartnack","T Odoch","G Kratzer","Trine M. L’Abee-Lund","Yngvild Wasteson"]
