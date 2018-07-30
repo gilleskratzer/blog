@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Additive Bayesian networks for antibiotic resistance and potential risk factors in Salmonella enterica isolates from layer hens in Uganda</title>
+      <link>/publication/terence/</link>
+      <pubDate>Wed, 25 Jul 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/terence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Comparison between Suitable Priors for Additive Bayesian Networks</title>
       <link>/publication/catabn/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0200</pubDate>
@@ -295,121 +304,6 @@ p&amp;lt;- ggplot(data,aes(x = Year, y=Frequency))+
   annotate(&amp;quot;text&amp;quot;, x = 2072, y = 0.001, label = &amp;quot;100% of words are Sustainability&amp;quot;,colour=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Which produces this graph. Fast and easy! As one can see, on a log scale Google ngram predicts that in a near future all published literature will be made of the word “Sustainability” written over and over …&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/ngram_files/figure-html/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>abn use accross the world?</title>
-      <link>/post/abn_used/</link>
-      <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/abn_used/</guid>
-      <description>&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;This post is highly inspired by &lt;a href=&#34;https://www.r-bloggers.com/my-r-packages-worldmap-of-downloads/&#34;&gt;this post&lt;/a&gt; from R-Bloggers and my &lt;a href=&#34;#IDdownload&#34;&gt;previous post&lt;/a&gt;. Again the necessary code is available &lt;a href=&#34;&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As maintenair of an R package, it is always interesting to know if it is used and by whom? This post shows some plots to asses R package usage.&lt;/p&gt;
-&lt;p&gt;I started by a small review to list the similar other R packages. I found that &lt;a href=&#34;https://cran.r-project.org/web/packages/bnlearn/index.html&#34;&gt;bnlearn&lt;/a&gt;, &lt;a href=&#34;https://cran.r-project.org/web/packages/deal/index.html&#34;&gt;deal&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/gRbase/index.html&#34;&gt;grbase&lt;/a&gt; are comparable to &lt;a href=&#34;https://cran.r-project.org/web/packages/abn/index.html&#34;&gt;abn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here is a comparative scatter plot of the daily count of downloads, from May the 1st to September the 4th, for the listed package.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/dowloads_comp.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Here is the ordered total number of download per country for the same period for abn only.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/country_dowloads_abn.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Here is the total count over the week days for this period. As one can see, number of downloads decreases of about (only?) a half during the weekend.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/downloads_weekdays_abn.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;This graph represents the instantly (smoothed by minute) number of downloads in standardized UTC.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/downloads_hour_abn.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Finaly a world map with number of downloads on log scale.&lt;/p&gt;
-&lt;div style=&#34;width:800px; height=600px&#34;&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/img/images/downloads_abn_mapW.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Below is the necessary code to extract, manipulate and plot the data.&lt;/p&gt;
-&lt;p&gt;  &lt;a id=&#34;my_chunk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;###########################################################################
-##Gilles Kratzer
-##Analysis on CRAN Rstudio log files in order to compute to the number of downloads
-##History :
-## --2016/11/13 document created
-###########################################################################
-
-###########################################################################
-##Purpose: Analysis of the downloads of R packages
-##Highly inspired by https://www.r-bloggers.com/finally-tracking-cran-packages-downloads/
-##Highly inspired by http://blog.kongscn.me/2015/05/15/r-packages-stats.html
-##Highly inspired by https://www.r-bloggers.com/my-r-packages-worldmap-of-downloads/
-###########################################################################
-
-##cleaning
-rm(list = ls())
-graphics.off()
-
-##packages
-library(lubridate)
-library(data.table)
-library(dplyr)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-library(maptools)
-
-
-
-## ======================================================================
-## Plot world map
-## ======================================================================
-
-
-  counts &amp;lt;- cbind.data.frame(table(data$country))
-  names(counts) &amp;lt;- c(&amp;quot;country&amp;quot;, &amp;quot;count&amp;quot;)
-  
-  # you need to download a shapefile of the world map from Natural Earth (for instance)
-  # http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
-  # and unzip it in the &amp;#39;shp.file.repos&amp;#39; repository
-  world&amp;lt;-readShapePoly(fn=paste(shp.file.repos, &amp;quot;ne_110m_admin_0_countries&amp;quot;, sep=&amp;quot;/&amp;quot;))
-  ISO_full &amp;lt;- as.character(world@data$iso_a2)
-  ISO_full[146] &amp;lt;- &amp;quot;SOM&amp;quot;  # The iso identifier for the Republic of Somaliland is missing
-  ISO_full[89]  &amp;lt;- &amp;quot;KV&amp;quot; # as for the Republic of Kosovo
-  ISO_full[39]  &amp;lt;- &amp;quot;CYP&amp;quot; # as for Cyprus
-  
-  colcode &amp;lt;- numeric(length(ISO_full))
-  names(colcode) &amp;lt;- ISO_full
-  dnl_places &amp;lt;- names(colcode[which(names(colcode) %in% as.character(counts$country))])
-  rownames(counts) &amp;lt;- counts$country
-  colcode[dnl_places] &amp;lt;- counts[dnl_places, &amp;quot;count&amp;quot;]
-  
-  world@data$id &amp;lt;- rownames(world@data)
-  world.points &amp;lt;- fortify(world, by=&amp;quot;id&amp;quot;)
-  names(colcode) &amp;lt;- rownames(world@data)
-  world.points$dnls &amp;lt;- colcode[world.points$id]
-  
-  world.map &amp;lt;-  ggplot(data=world.points) +
-    geom_polygon(aes(x = long, y = lat, group=group, fill=dnls), color=&amp;quot;black&amp;quot;) +
-    coord_equal() + #theme_minimal() +
-    scale_fill_gradient(low=&amp;quot;white&amp;quot;, high=&amp;quot;#56B1F7&amp;quot;, name=&amp;quot;Downloads&amp;quot;) +
-    labs(title=paste(pkgname, &amp;quot; downloads from the &amp;#39;0-Cloud&amp;#39; CRAN mirror by country\nfrom &amp;quot;, date.start, &amp;quot; to &amp;quot;, date.stop,&amp;quot;\n(Total downloads: &amp;quot;, sum(counts$count), &amp;quot;)&amp;quot;, sep=&amp;quot;&amp;quot;))
-world.map&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

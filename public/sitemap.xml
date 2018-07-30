@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/terence/</loc>
+      <lastmod>2018-07-25T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/catabn/</loc>
       <lastmod>2018-07-01T00:00:00+02:00</lastmod>
     </url>
@@ -281,7 +290,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -291,7 +300,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
