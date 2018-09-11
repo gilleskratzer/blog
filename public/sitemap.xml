@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/ruchti1/</loc>
+      <lastmod>2018-07-30T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/terence/</loc>
       <lastmod>2018-07-25T00:00:00+02:00</lastmod>
     </url>
@@ -24,15 +33,6 @@
     <url>
     
       <loc>/publication/mleabn/</loc>
-      <lastmod>2018-06-01T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication/ruchti1/</loc>
       <lastmod>2018-06-01T00:00:00+02:00</lastmod>
     </url>
     
@@ -221,6 +221,16 @@
     
     <url>
     
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/cran/</loc>
       <lastmod>2016-09-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -342,16 +352,6 @@
     
       <loc>/tags/simulation/</loc>
       <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

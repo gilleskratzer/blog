@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on So what ...</title>
+    <title>Homes on </title>
     <link>/home/</link>
-    <description>Recent content in Homes on So what ...</description>
+    <description>Recent content in Homes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>So what ... </title>
+      <title></title>
       <link>/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>/home/hero/</guid>
-      <description>just another blog about statistics and data analysis</description>
+      <description></description>
     </item>
     
     <item>
@@ -73,10 +73,10 @@
       
       <guid>/home/talks/</guid>
       <description>Futur events:
- 20 November 2018, Research in Progress talk. Additive Bayesian Network modeling applied to patient preference surveys.  Past events:
- 2-3 July 2018, BAYSM 2018, Warwick. Poster: Comparison between Suitable Priors for Additive Bayesian Networks.
- 30 May 2018. Brown Bag Seminar in ZHAW. Presentation: Bayesian Networks Learning in a Nutshell.
- 02 May 2018. Institute of Global Health, Geneva. Presentation: Advances in Additive Bayesian Network applied to observational systems epidemiology datasets.</description>
+ 14 September 2018, M-14E Current topics of Laboratory Animal Science, lecture. Academical statistical consulting service for veterinary research and case study about ethic and statistics. (UZH, Switzerland)
+ 4 October 2018, talk in Nutricia (Danone). Multivariable analysis: variable and model selection in system epidemiology. (Utrecht, Netherland)
+ 20 November 2018, Research in Progress talk. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
+  Past events:</description>
     </item>
     
   </channel>
