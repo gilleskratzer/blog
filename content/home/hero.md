@@ -14,7 +14,7 @@ weight = 3
 [header]
 #  overlay_color = "#666"  # An HTML color value.
   overlay_img = "upperbanner.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.15  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.05  # Darken the image. Value in range 0-1.
 #<font color="white">just another blog about statistics and data analysis <font />
 #<font color="black">
 
