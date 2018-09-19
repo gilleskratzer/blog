@@ -1,6 +1,6 @@
 +++
 title = "Comparison between Suitable Priors for Additive Bayesian Networks"
-date = 2018-07-01T00:00:00
+date = 2018-09-19T00:00:00
 
 # Authors. Comma separated list, e.g. `["Gilles Kratzer", "Reinhard Furrer"]`.
 authors = ["G Kratzer", "R Furrer", "M Pittavino"]
@@ -17,11 +17,11 @@ authors = ["G Kratzer", "R Furrer", "M Pittavino"]
 publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "In Press."
-publication_short = "In Press."
+publication = "In arXiv."
+publication_short = "In arXiv."
 
 # Abstract and optional shortened version.
-#abstract = "This article describes the R package varrank. It has a flexible implementation of heuristic approaches which perform variable ranking based on mutual information. The package is particularly suitable for exploring multivariate datasets requiring a holistic analysis. The core functionality is a general implementation of the minimum redundancy maximum relevance (mRMRe) model. This approach is based on information theory metrics. It is compatible with discrete and continuous data which are discretised using a large choice of possible rules. The two main problems that can be addressed by this package are the selection of the most representative variables for modeling a collection of variables of interest, i.e., dimension reduction, and variable ranking with respect to a set of variables of interest."
+abstract = "Additive Bayesian networks are types of graphical models that extend the usual Bayesian generalized linear model to multiple dependent variables through the factorisation of the joint probability distribution of the underlying variables. When fitting an ABN model, the choice of the prior of the parameters is of crucial importance. If an inadequate prior - like a too weakly informative one - is used, data separation and data sparsity lead to issues in the model selection process. In this work a simulation study between two weakly and a strongly informative priors is presented. As weakly informative prior we use a zero mean Gaussian prior with a large variance, currently implemented in the R-package abn. The second prior belongs to the Student's t-distribution, specifically designed for logistic regressions and, finally, the strongly informative prior is again Gaussian with mean equal to true parameter value and a small variance. We compare the impact of these priors on the accuracy of the learned additive Bayesian network in function of different parameters. We create a simulation study to illustrate Lindley's paradox based on the prior choice. We then conclude by highlighting the good performance of the informative Student's t-prior and the limited impact of the Lindley's paradox. Finally, suggestions for further developments are provided."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
@@ -36,9 +36,9 @@ selected = true
 projects = ["abn"]
 
 # Links (optional).
-#url_pdf = "https://arxiv.org/pdf/1804.07134.pdf"
-#url_preprint = "https://arxiv.org/abs/1804.07134 "
-#url_code = "https://CRAN.R-project.org/package=abn"
+url_pdf = "https://arxiv.org/pdf/1809.06636.pdf"
+url_preprint = "https://arxiv.org/abs/1809.06636"
+url_code = "https://CRAN.R-project.org/package=abn"
 #url_dataset = "#"
 #url_project = ""
 #url_slides = "#"
