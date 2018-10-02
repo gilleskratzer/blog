@@ -25,6 +25,8 @@ list_format = 0
 
 - 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
 
+- 4 December 2018, [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
+
 **Past events**:
 
 - 14 September 2018, [M-14E Current topics of Laboratory Animal Science](https://www.ltk.uzh.ch/en/teaching-and-training/ltk-module-14e.html), **lecture**. Academical statistical consulting service for veterinary research and case study about ethic and statistics. (UZH, Switzerland)
