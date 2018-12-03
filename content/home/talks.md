@@ -21,11 +21,15 @@ list_format = 0
 +++
 **Futur events**:
 
-- 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
 
-- 4 December 2018, [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
+- 4 December 2018, co-organizer of the [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
+
+- 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](http://svepm2019.org/program/workshops/). (Utrecht, Netherland)
 
 **Past events**:
+
+- 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
+
 
 - 4 October 2018, **talk** in Nutricia (Danone). Multivariable analysis: variable and model selection in system epidemiology. (Utrecht, Netherland)
 
