@@ -63,7 +63,13 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/soft/</guid>
-      <description> author of varrank R package that perform variable selection with applications in systemic datasets  maintainer of abn R package that models multivariate data with Additive Bayesian Networks  contributor of ATR R package for plotting party trees in left-right orientation instead of the classical top-down layout   </description>
+      <description>&amp;ndash; maintainer and author of varrank R package that perform variable selection with applications in systemic datasets
+
+
+&amp;ndash; maintainer and author of abn R package that models multivariate data with Additive Bayesian Networks
+
+
+&amp;ndash; contributor of ATR R package for plotting party trees in left-right orientation instead of the classical top-down layout</description>
     </item>
     
     <item>
@@ -73,10 +79,11 @@
       
       <guid>/home/talks/</guid>
       <description>Futur events:
- 4 October 2018, talk in Nutricia (Danone). Multivariable analysis: variable and model selection in system epidemiology. (Utrecht, Netherland)
- 20 November 2018, Research in Progress talk. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
+ 4 December 2018, co-organizer of the 1st Causality workshop talk, Bayesian Networks meet Observational data. (UZH, Switzerland)
+ 29 March 2019, co-organizer of a workshop on Multivariate analysis using Additive Bayesian Networks. (Utrecht, Netherland)
   Past events:
- 14 September 2018, M-14E Current topics of Laboratory Animal Science, lecture. Academical statistical consulting service for veterinary research and case study about ethic and statistics. (UZH, Switzerland)</description>
+ 20 November 2018, Research in Progress talk. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
+ 4 October 2018, talk in Nutricia (Danone). Multivariable analysis: variable and model selection in system epidemiology.</description>
     </item>
     
   </channel>
