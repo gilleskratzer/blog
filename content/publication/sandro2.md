@@ -3,7 +3,7 @@ title = "A new fluorescence-based method for characterizing in vitro aerosol exp
 date = 2017-02-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["S Steiner","S Majeed","G Kratzer","G Vuillaume","J Hoeng","S Fretzel"]
+authors = ["S. Steiner","S. Majeed","G. Kratzer","G. Vuillaume","J. Hoeng","S. Fretzel"]
 
 
 # Publication type.

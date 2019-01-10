@@ -3,7 +3,7 @@ title = "Improvement of the open circuit voltage by modifying the transparent in
 date = 2011-11-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["FJ Haug et al"]
+authors = ["F. J. Haug et al"]
 
 # Publication type.
 # Legend:

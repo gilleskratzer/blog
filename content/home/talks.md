@@ -21,12 +21,13 @@ list_format = 0
 +++
 **Futur events**:
 
-
-- 4 December 2018, co-organizer of the [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
+- 6/7 February 2019, co-organizer of a **workshop** on R programming language. (Zurich, Switzerland)
 
 - 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
 
 **Past events**:
+
+- 4 December 2018, co-organizer of the [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
 
 - 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
 
@@ -35,7 +36,7 @@ list_format = 0
 
 - 14 September 2018, [M-14E Current topics of Laboratory Animal Science](https://www.ltk.uzh.ch/en/teaching-and-training/ltk-module-14e.html), **lecture**. Academical statistical consulting service for veterinary research and case study about ethic and statistics. (UZH, Switzerland)
 
-- 2-3 July 2018, BAYSM 2018, Warwick. **Poster**: Comparison between Suitable Priors for Additive Bayesian Networks. (UK)
+- 2-3 July 2018, BAYSM 2018, Warwick. **Poster**: Comparison between Suitable Priors for Additive Bayesian Networks. (Warwick, UK)
 
 - 30 May 2018. [Brown Bag Seminar](https://tensorchiefs.github.io/bbs/) in ZHAW. **Presentation**: Bayesian Networks Learning in a Nutshell. (Winterthur, Switzerland)
 

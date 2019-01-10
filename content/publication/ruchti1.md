@@ -3,7 +3,7 @@ title = "Pododermatitis in group housed rabbit does in Switzerland – prevalenc
 date = 2018-07-30T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["S Ruchti","A R Meier","H Würbel","G Kratzer","S Gebhardt-Henrich","S Hartnack"]
+authors = ["S. Ruchti","A. R. Meier","H. Würbel","G. Kratzer","S. Gebhardt-Henrich","S. Hartnack"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized

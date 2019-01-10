@@ -3,7 +3,7 @@ title = "varrank: an R package for variable ranking based on mutual information 
 date = 2018-04-23T00:00:00
 
 # Authors. Comma separated list, e.g. `["Gilles Kratzer", "Reinhard Furrer"]`.
-authors = ["G Kratzer", "R Furrer"]
+authors = ["G. Kratzer", "R. Furrer"]
 
 # Publication type.
 # Legend:

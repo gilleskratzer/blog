@@ -3,7 +3,7 @@ title = "Characterization of the Vitrocell® 24/48 aerosol exposure system for i
 date = 2017-10-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["S Steiner","S Majeed","G Kratzer","G Vuillaume","J Hoeng","S Fretzel"]
+authors = ["S. Steiner","S. Majeed","G. Kratzer","G. Vuillaume","J. Hoeng","S. Fretzel"]
 
 
 # Publication type.

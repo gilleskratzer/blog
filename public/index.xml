@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Revealing the structure of the associations between housing system, facilities, management and welfare of commercial laying hens using Additive Bayesian Networks</title>
+      <link>/publication/comin/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/comin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Comparison between Suitable Priors for Additive Bayesian Networks</title>
       <link>/publication/catabn/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
@@ -52,15 +61,6 @@
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
       
       <guid>/publication/ruchti2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Revealing the structure of the associations between housing system, facilities, management and welfare of commercial laying hens using Additive Bayesian Networks</title>
-      <link>/publication/comin/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/publication/comin/</guid>
       <description></description>
     </item>
     

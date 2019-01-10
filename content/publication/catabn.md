@@ -3,7 +3,7 @@ title = "Comparison between Suitable Priors for Additive Bayesian Networks"
 date = 2018-09-19T00:00:00
 
 # Authors. Comma separated list, e.g. `["Gilles Kratzer", "Reinhard Furrer"]`.
-authors = ["G Kratzer", "R Furrer", "M Pittavino"]
+authors = ["G. Kratzer", "R. Furrer", "M. Pittavino"]
 
 # Publication type.
 # Legend:

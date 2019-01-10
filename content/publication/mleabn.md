@@ -3,7 +3,7 @@ title = "Information-Theoretic Scoring Rules to Learn Additive Bayesian Network 
 date = 2018-06-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Gilles Kratzer", "Reinhard Furrer"]`.
-authors = ["G Kratzer", "R Furrer"]
+authors = ["G. Kratzer", "R. Furrer"]
 
 # Publication type.
 # Legend:
