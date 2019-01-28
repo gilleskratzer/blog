@@ -21,9 +21,11 @@ list_format = 0
 +++
 **Futur events**:
 
-- 6/7 February 2019, co-organizer of a **workshop** on R programming language. (Zurich, Switzerland)
+- 6/7 February 2019, talk for [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
 
 - 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
+
+- 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
 **Past events**:
 
