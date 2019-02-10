@@ -21,18 +21,17 @@ list_format = 0
 +++
 **Futur events**:
 
-- 6/7 February 2019, talk for [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
-
 - 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
 
 - 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
 **Past events**:
 
+- 6/7 February 2019, 2 full days lecture (including hands-on sessions) on regression models, mixed models and plot caveats in EDA at the [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
+
 - 4 December 2018, co-organizer of the [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
 
 - 20 November 2018, Research in Progress **talk**. Additive Bayesian Network modeling applied to patient preference surveys. (UZH, Switzerland)
-
 
 - 4 October 2018, **talk** in Nutricia (Danone). Multivariable analysis: variable and model selection in system epidemiology. (Utrecht, Netherland)
 
