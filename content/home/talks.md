@@ -27,7 +27,7 @@ list_format = 0
 
 **Past events**:
 
-- 6/7 February 2019, 2 full days lecture (including hands-on sessions) on regression models, mixed models and plot caveats in exploratory data analysis at the [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
+- 6/7 February 2019, 2 full days lecture (including hands-on sessions) on regression models, mixed models and and introduction to ggplot (with attention to plotting caveats in exploratory data analysis) at the [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
 
 - 4 December 2018, co-organizer of the [1st Causality workshop](https://bsick.github.io/causality_workshop/) **talk**, Bayesian Networks meet Observational data. (UZH, Switzerland)
 
