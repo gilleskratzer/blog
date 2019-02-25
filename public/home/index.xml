@@ -63,7 +63,10 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/soft/</guid>
-      <description>&amp;ndash; maintainer and author of varrank R package that perform variable selection with applications in systemic datasets
+      <description>&amp;ndash; maintainer and author of mcmcabn R package that performs structural MCMC over DAGs with applications in systemic datasets
+
+
+&amp;ndash; maintainer and author of varrank R package that performs variable selection with applications in systemic datasets
 
 
 &amp;ndash; maintainer and author of abn R package that models multivariate data with Additive Bayesian Networks
@@ -79,11 +82,10 @@
       
       <guid>/home/talks/</guid>
       <description>Futur events:
- 6&amp;frasl;7 February 2019, co-organizer of a workshop on R programming language. (Zurich, Switzerland)
  29 March 2019, co-organizer of a workshop on Multivariate analysis using Additive Bayesian Networks. (Utrecht, Netherland)
+ 7&amp;frasl;9 May 2019, co-organizer of a ECVPH Residents workshop on ABN modeling. (Zurich, Switzerland)
   Past events:
- 4 December 2018, co-organizer of the 1st Causality workshop talk, Bayesian Networks meet Observational data. (UZH, Switzerland)
- 20 November 2018, Research in Progress talk. Additive Bayesian Network modeling applied to patient preference surveys.</description>
+ 6&amp;frasl;7 February 2019, 2 full days lecture (including hands-on sessions) on regression models, mixed models and and introduction to ggplot (with attention to plotting caveats in exploratory data analysis) at the advanced statistics workshop: Good scientific practice for Neuroscientists using R programming language.</description>
     </item>
     
   </channel>

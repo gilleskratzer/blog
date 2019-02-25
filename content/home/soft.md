@@ -15,7 +15,13 @@ weight = 60
 
 +++
 
--- maintainer and author of <a href = "https://CRAN.R-project.org/package=varrank" target="_blank"> varrank</a>  R package that perform variable selection with applications in systemic datasets 
+-- maintainer and author of <a href = "https://CRAN.R-project.org/package=mcmcabn" target="_blank"> mcmcabn</a>  R package that performs structural MCMC over DAGs with applications in systemic datasets
+
+[![](https://cranlogs.r-pkg.org/badges/mcmcabn?color=lightgrey)](https://cran.rstudio.com/web/packages/mcmcabn/index.html?color=brightgreen)
+
+[![](https://cranlogs.r-pkg.org/badges/grand-total/mcmcabn?color=grey)](https://cran.rstudio.com/web/packages/grand-total/mcmcabn/index.html?color=brightgreen)
+
+-- maintainer and author of <a href = "https://CRAN.R-project.org/package=varrank" target="_blank"> varrank</a>  R package that performs variable selection with applications in systemic datasets 
 
 [![](https://cranlogs.r-pkg.org/badges/varrank?color=lightgrey)](https://cran.rstudio.com/web/packages/varrank/index.html?color=brightgreen)
  

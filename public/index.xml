@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Is a single unique Bayesian network enough to accurately represent your data?</title>
+      <link>/publication/mcmcabn/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/mcmcabn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Revealing the structure of the associations between housing system, facilities, management and welfare of commercial laying hens using Additive Bayesian Networks</title>
       <link>/publication/comin/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0100</pubDate>
@@ -274,37 +283,6 @@ legend(x=6,y=500,c(&amp;quot;Susceptibles&amp;quot;, &amp;quot;Infecteds&amp;quo
       
       <guid>/publication/sandro2/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Google Ngram</title>
-      <link>/post/ngram/</link>
-      <pubDate>Fri, 30 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/ngram/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://books.google.com/ngrams&#34;&gt;Google Ngram Viewer&lt;/a&gt;, started in December 2010, is an online search engine that returns the yearly relative frequency of a set of words, found in a selected printed sources, called corpus of books, between 1500 and 2016 (many language available). More specifically, it returns the relative frequency of the yearly &lt;strong&gt;ngram&lt;/strong&gt; (continuous set of n words. For example, &lt;strong&gt;I&lt;/strong&gt; is a 1-gram and &lt;strong&gt;I am&lt;/strong&gt; is a 2-grams). This means that if you search for &lt;em&gt;one&lt;/em&gt; word (called unigram), you get the percentage of this word to all the other word found in the corpus of books for a certain year. When I discovered it, I was shocked! With &lt;strong&gt;google ngram&lt;/strong&gt; one can plot the yearly relative frequency of &lt;em&gt;any&lt;/em&gt; ngram! The &lt;a href=&#34;https://books.google.com/ngrams&#34;&gt;Google Ngram Viewer&lt;/a&gt; help page contains a lot of very convincing examples. It is the perfect typical data mining tool. I started to imagine what I could do with such a tool. One can study trends in knowledge, one can study relative importance of concepts etc …&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;http://science.sciencemag.org/content/331/6014/176.full&#34;&gt;science paper&lt;/a&gt; has been published in 2011. They named this research field as &lt;em&gt;culturomics&lt;/em&gt;. This paper presents some convincing search examples, which put the &lt;em&gt;culturomics&lt;/em&gt; in front of the scientific literature. This research field has popping up in social science articles and made the Google ngrams charts very common and popular. This Google’ service have received many criticisms. A &lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137041&#34;&gt;PLOS paper&lt;/a&gt; discuss the pitfalls of Google ngrams. Mainly inaccurate character recognition, an overabundance of scientific literature, misindexation and misdating of texts. Up to that point, I though that this was manageable. Indeed, inaccuracies will be soon corrected and Google will incorporate other books then this will not be a problem. Last criticism is that the percentage take into account published manuscripts regardless of their importance. Again this paper discuss from in a very convincing way the limitations of Google ngram.&lt;/p&gt;
-&lt;p&gt;We definitely need an R package to test it. Hopefully, it exists &lt;a href=&#34;https://github.com/seancarmody/ngramr&#34;&gt;ngramr&lt;/a&gt;, an r package available on github. It is very efficient and easy to use. Then let us start with our first search (an inspired joke by &lt;a href=&#34;http://xkcd.com/1007/&#34;&gt;xkcd&lt;/a&gt; actually).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(devtools)
-install_github(&amp;quot;ngramr&amp;quot;, &amp;quot;seancarmody&amp;quot;)
-library(ngramr)
-
-data&amp;lt;-ngrami(c(&amp;quot;sustainability&amp;quot;))
-
-library(ggplot2)
-data.sub&amp;lt;-subset(data,data$Year&amp;gt;1985)
-
-p&amp;lt;- ggplot(data,aes(x = Year, y=Frequency))+
-  geom_point()+
-  stat_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE,data=data, fullrange = TRUE)+
-  scale_y_log10(limits=c(0.00000000001,1))+
-  xlim(1945,2100)+
-  annotate(&amp;quot;pointrange&amp;quot;, x = 2072, y = 0.5, ymin = 0.01, ymax = 0.8,
-           colour = &amp;quot;red&amp;quot;, size = 1.5)+
-  annotate(&amp;quot;text&amp;quot;, x = 2072, y = 0.001, label = &amp;quot;100% of words are Sustainability&amp;quot;,colour=&amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Which produces this graph. Fast and easy! As one can see, on a log scale Google ngram predicts that in a near future all published literature will be made of the word “Sustainability” written over and over …&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/post/ngram_files/figure-html/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
