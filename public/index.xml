@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Progression and risk factors of pododermatitis in part-time group housed rabbit does in Switzerland</title>
+      <link>/publication/ruchti2/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/ruchti2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Is a single unique Bayesian network enough to accurately represent your data?</title>
       <link>/publication/mcmcabn/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
@@ -61,15 +70,6 @@
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
       
       <guid>/publication/mleabn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Progression and risk factors of pododermatitis in part-time group housed rabbit does in Switzerland</title>
-      <link>/publication/ruchti2/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/publication/ruchti2/</guid>
       <description></description>
     </item>
     
