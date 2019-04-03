@@ -19,13 +19,16 @@ count = 10
 list_format = 0
 
 +++
-**Futur events**:
 
-- 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
+**Futur events**:
 
 - 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
+- 10 October 2019, **workshop** about *Choosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](www.biomedicalsciences.ch) (Bern, Switzerland)
+
 **Past events**:
+
+- 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
 
 - 6/7 February 2019, two days lecture (including hands-on sessions) on regression models, mixed models and and introduction to ggplot (with attention to plotting caveats in exploratory data analysis) at the [advanced statistics workshop](https://adv-stat.com/): Good scientific practice for Neuroscientists using R programming language. (Zurich, Switzerland)
 
