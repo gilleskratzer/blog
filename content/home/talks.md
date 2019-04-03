@@ -24,7 +24,7 @@ list_format = 0
 
 - 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
-- 10 October 2019, **workshop** about *Choosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](www.biomedicalsciences.ch) (Bern, Switzerland)
+- 10 October 2019, **workshop** about *Choosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](http://biomedicalsciences.ch/) (Bern, Switzerland)
 
 **Past events**:
 
