@@ -17,8 +17,8 @@ authors = ["G. Kratzer", "R. Furrer", "M. Pittavino"]
 publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "In arXiv."
-publication_short = "In arXiv."
+publication = "In Bayesian Statistics: New Challenges and New Generations."
+publication_short = "In Bayes stats."
 
 # Abstract and optional shortened version.
 abstract = "Additive Bayesian networks are types of graphical models that extend the usual Bayesian generalized linear model to multiple dependent variables through the factorisation of the joint probability distribution of the underlying variables. When fitting an ABN model, the choice of the prior of the parameters is of crucial importance. If an inadequate prior - like a too weakly informative one - is used, data separation and data sparsity lead to issues in the model selection process. In this work a simulation study between two weakly and a strongly informative priors is presented. As weakly informative prior we use a zero mean Gaussian prior with a large variance, currently implemented in the R-package abn. The second prior belongs to the Student's t-distribution, specifically designed for logistic regressions and, finally, the strongly informative prior is again Gaussian with mean equal to true parameter value and a small variance. We compare the impact of these priors on the accuracy of the learned additive Bayesian network in function of different parameters. We create a simulation study to illustrate Lindley's paradox based on the prior choice. We then conclude by highlighting the good performance of the informative Student's t-prior and the limited impact of the Lindley's paradox. Finally, suggestions for further developments are provided."

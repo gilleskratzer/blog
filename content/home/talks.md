@@ -24,6 +24,8 @@ list_format = 0
 
 - 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
+- 16 May, as an *Open Access ambassador* for the [SNF](https://oa100.snf.ch/fr/engagement-fr/ambassadeurs-de-lopen-access/gilles-kratzer/) I will have a **talk** [What is open access/open science?](https://www.grc.uzh.ch/en/events/PostdocMeetUp.html) in the Postdoc MeetUp from Zurich University. (Zurich, Switzerland)
+
 - 10 October 2019, **workshop** about *Choosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](http://biomedicalsciences.ch/) (Bern, Switzerland)
 
 **Past events**:
