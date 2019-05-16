@@ -14,43 +14,29 @@ tags: ["R Markdown", "CRAN", "data visualization"]
 <p>I started by a small review to list the similar other R packages. I found that <a href="https://cran.r-project.org/web/packages/bnlearn/index.html">bnlearn</a>, <a href="https://cran.r-project.org/web/packages/deal/index.html">deal</a> and <a href="https://cran.r-project.org/web/packages/gRbase/index.html">grbase</a> are comparable to <a href="https://cran.r-project.org/web/packages/abn/index.html">abn</a>.</p>
 <p>Here is a comparative scatter plot of the daily count of downloads, from May the 1st to September the 4th, for the listed package.</p>
 <div style="width:800px; height=600px">
-<div class="figure">
-<img src="/img/images/dowloads_comp.png" />
-
-</div>
+<p><img src="/img/images/dowloads_comp.png" /></p>
 </div>
 <p>Here is the ordered total number of download per country for the same period for abn only.</p>
 <div style="width:800px; height=600px">
-<div class="figure">
-<img src="/img/images/country_dowloads_abn.png" />
-
-</div>
+<p><img src="/img/images/country_dowloads_abn.png" /></p>
 </div>
 <p> </p>
 <p>Here is the total count over the week days for this period. As one can see, number of downloads decreases of about (only?) a half during the weekend.</p>
 <div style="width:800px; height=600px">
-<div class="figure">
-<img src="/img/images/downloads_weekdays_abn.png" />
-
-</div>
+<p><img src="/img/images/downloads_weekdays_abn.png" /></p>
 </div>
 <p>This graph represents the instantly (smoothed by minute) number of downloads in standardized UTC.</p>
 <div style="width:800px; height=600px">
-<div class="figure">
-<img src="/img/images/downloads_hour_abn.png" />
-
-</div>
+<p><img src="/img/images/downloads_hour_abn.png" /></p>
 </div>
 <p>Finaly a world map with number of downloads on log scale.</p>
 <div style="width:800px; height=600px">
-<div class="figure">
-<img src="/img/images/downloads_abn_mapW.png" />
-
-</div>
+<p><img src="/img/images/downloads_abn_mapW.png" /></p>
 </div>
 <p> </p>
 <p>Below is the necessary code to extract, manipulate and plot the data.</p>
-<p>  <a id="my_chunk"></a></p>
+<p> 
+<a id="my_chunk"></a></p>
 <pre class="r"><code>###########################################################################
 ##Gilles Kratzer
 ##Analysis on CRAN Rstudio log files in order to compute to the number of downloads

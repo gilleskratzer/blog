@@ -18,7 +18,6 @@ We definitely need an R package to test it. Hopefully, it exists [ngramr](https:
 
 ```{r cars, error=FALSE,warning=FALSE,prompt=FALSE,message=FALSE}
 require(devtools)
-install_github("ngramr", "seancarmody")
 library(ngramr)
 
 data<-ngrami(c("sustainability"))
