@@ -34,7 +34,7 @@ selected = true
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 #projects = [""]
-projects = ["stats"]
+#projects = [""]
 
 # Links (optional).
 url_pdf = "https://journals.lww.com/painrpts/Abstract/latest/Does_toe_clipping_for_genotyping_interfere_with.99860.aspx"
