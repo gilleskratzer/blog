@@ -37,7 +37,7 @@ selected = false
 projects = ["abn"]
 
 # Links (optional).
-#url_pdf = "https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-019-1965-y"
+url_pdf = "https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-019-1965-y"
 #url_preprint = ""
 url_code = "https://CRAN.R-project.org/package=abn"
 #url_dataset = ""
