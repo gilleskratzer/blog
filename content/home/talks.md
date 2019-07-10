@@ -22,13 +22,15 @@ list_format = 0
 
 **Futur events**:
 
-- 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
+- 2/6 September, **workshop** about *Open Science, your Career as a Researcher, and Beyond* during [OSIP2019](http://osip2019.epfl.ch/) at the [EPFL](https://www.epfl.ch/en/) (Lausanne, Switzerland)
+
+- 10 October 2019, **workshop** about *Chosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](http://biomedicalsciences.ch/) (Bern, Switzerland)
+
+**Past events**:
 
 - 16 May, as an *Open Access ambassador* for the [SNF](https://oa100.snf.ch/fr/engagement-fr/ambassadeurs-de-lopen-access/gilles-kratzer/) I will have a **talk** [What is open access/open science?](https://www.grc.uzh.ch/en/events/PostdocMeetUp.html) in the Postdoc MeetUp from Zurich University. (Zurich, Switzerland)
 
-- 10 October 2019, **workshop** about *Choosen biostatistical topics for research and animal experimentation* at the [Animal and Ethic Day](http://biomedicalsciences.ch/) (Bern, Switzerland)
-
-**Past events**:
+- 7/9 May 2019, co-organizer of a [ECVPH Residents workshop on ABN modeling](https://ecvph.org/meetings-events/ecvph-residents-workshop-abn-modeling). (Zurich, Switzerland)
 
 - 29 March 2019, co-organizer of a **workshop** on [Multivariate analysis using Additive Bayesian Networks](https://gilleskratzer.github.io/SVEPM2019/). (Utrecht, Netherland)
 
