@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Additive Bayesian networks are types of graphical models that extend the usual Bayesian generalized linear model to multiple dependent variables through the factorisation of the joint probability distribution of the underlying variables. When fitting an ABN model, the choice of the prior of the parameters is of crucial importance. If an inadequate prior - like a too weakly informative one - is used, data separation and data sparsity lead to issues in the model selection process. In this work a simulation study between two weakly and a strongly informative priors is presented. As weakly informative prior we use a zero mean Gaussian prior with a large variance, currently implemented in the R-package abn. The second prior belongs to the Student&#39;s t-distribution, specifically designed for logistic regressions and, finally, the strongly informative prior is again Gaussian with mean equal to true parameter value and a small variance. We compare the impact of these priors on the accuracy of the learned additive Bayesian network in function of different parameters. We create a simulation study to illustrate Lindley&#39;s paradox based on the prior choice. We then conclude by highlighting the good performance of the informative Student&#39;s t-prior and the limited impact of the Lindley&#39;s paradox. Finally, suggestions for further developments are provided.">
+  <meta name="description" content="Bayesian network (BN) modeling is a rich and flexible analytical framework capable of elucidating complex veterinary epidemiological data. It is a graphical modeling technique that enables the visual presentation of multi-dimensional results while retaining statistical rigor in population-level inference. Using previously published case study data about feline calicivirus (FCV) and other respiratory pathogens in cats in Switzerland, a full BN modeling analysis is presented. The analysis shows that reducing the group size and vaccinating animals are the two actionable factors directly associated with FCV status and are primary targets to control FCV infection. The presence of gingivostomatitis and Mycoplasma felis is also associated with FCV status, but signs of upper respiratory tract disease (URTD) are not. FCV data is particularly well-suited to a network modeling approach, as both multiple pathogens and multiple clinical signs per pathogen are involved, along with multiple potentially interrelated risk factors. BN modeling is a holistic approach—all variables of interest may be mutually interdependent—which may help to address issues, such as confounding and collinear factors, as well as to disentangle directly vs. indirectly related variables. We introduce the BN methodology as an alternative to the classical uni- and multivariable regression approaches commonly used for risk factor analyses. We advise and guide researchers about how to use BNs as an exploratory data tool and demonstrate the limitations and practical issues. We present a step-by-step case study using FCV data along with all code necessary to reproduce our analyses in the open-source R environment. We compare and contrast the findings of the current case study using BN modeling with previous results that used classical regression techniques, and we highlight new potential insights. Finally, we discuss advanced methods, such as Bayesian model averaging, a common way of accounting for model uncertainty in a Bayesian network context.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/catabn/">
+  <link rel="alternate" hreflang="en-us" href="/publication/fcv/">
 
   
 
@@ -85,7 +85,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/catabn/">
+  <link rel="canonical" href="/publication/fcv/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -93,21 +93,21 @@
   <meta property="twitter:creator" content="@gilleskratzer">
   
   <meta property="og:site_name" content="">
-  <meta property="og:url" content="/publication/catabn/">
-  <meta property="og:title" content="Comparison between Suitable Priors for Additive Bayesian Networks | ">
-  <meta property="og:description" content="Additive Bayesian networks are types of graphical models that extend the usual Bayesian generalized linear model to multiple dependent variables through the factorisation of the joint probability distribution of the underlying variables. When fitting an ABN model, the choice of the prior of the parameters is of crucial importance. If an inadequate prior - like a too weakly informative one - is used, data separation and data sparsity lead to issues in the model selection process. In this work a simulation study between two weakly and a strongly informative priors is presented. As weakly informative prior we use a zero mean Gaussian prior with a large variance, currently implemented in the R-package abn. The second prior belongs to the Student&#39;s t-distribution, specifically designed for logistic regressions and, finally, the strongly informative prior is again Gaussian with mean equal to true parameter value and a small variance. We compare the impact of these priors on the accuracy of the learned additive Bayesian network in function of different parameters. We create a simulation study to illustrate Lindley&#39;s paradox based on the prior choice. We then conclude by highlighting the good performance of the informative Student&#39;s t-prior and the limited impact of the Lindley&#39;s paradox. Finally, suggestions for further developments are provided."><meta property="og:image" content="/img/banner_sun.jpg">
+  <meta property="og:url" content="/publication/fcv/">
+  <meta property="og:title" content="Bayesian Network Modeling Applied to Feline Calicivirus Infection Among Cats in Switzerland | ">
+  <meta property="og:description" content="Bayesian network (BN) modeling is a rich and flexible analytical framework capable of elucidating complex veterinary epidemiological data. It is a graphical modeling technique that enables the visual presentation of multi-dimensional results while retaining statistical rigor in population-level inference. Using previously published case study data about feline calicivirus (FCV) and other respiratory pathogens in cats in Switzerland, a full BN modeling analysis is presented. The analysis shows that reducing the group size and vaccinating animals are the two actionable factors directly associated with FCV status and are primary targets to control FCV infection. The presence of gingivostomatitis and Mycoplasma felis is also associated with FCV status, but signs of upper respiratory tract disease (URTD) are not. FCV data is particularly well-suited to a network modeling approach, as both multiple pathogens and multiple clinical signs per pathogen are involved, along with multiple potentially interrelated risk factors. BN modeling is a holistic approach—all variables of interest may be mutually interdependent—which may help to address issues, such as confounding and collinear factors, as well as to disentangle directly vs. indirectly related variables. We introduce the BN methodology as an alternative to the classical uni- and multivariable regression approaches commonly used for risk factor analyses. We advise and guide researchers about how to use BNs as an exploratory data tool and demonstrate the limitations and practical issues. We present a step-by-step case study using FCV data along with all code necessary to reproduce our analyses in the open-source R environment. We compare and contrast the findings of the current case study using BN modeling with previous results that used classical regression techniques, and we highlight new potential insights. Finally, we discuss advanced methods, such as Bayesian model averaging, a common way of accounting for model uncertainty in a Bayesian network context."><meta property="og:image" content="/img/varrank_banner.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-09-19T00:00:00&#43;02:00">
+  <meta property="article:published_time" content="2020-02-18T00:00:00&#43;01:00">
   
-  <meta property="article:modified_time" content="2018-09-19T00:00:00&#43;02:00">
-  
-
+  <meta property="article:modified_time" content="2020-02-18T00:00:00&#43;01:00">
   
 
   
 
-  <title>Comparison between Suitable Priors for Additive Bayesian Networks | </title>
+  
+
+  <title>Bayesian Network Modeling Applied to Feline Calicivirus Infection Among Cats in Switzerland | </title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -265,19 +265,19 @@
 <div class="article-header">
   
   
-    <img src="/img/banner_sun.jpg" class="article-banner" itemprop="image">
+    <img src="/img/varrank_banner.jpg" class="article-banner" itemprop="image">
   
 
-  <span class="article-header-caption">Nasa Solar Dynamics Observatory: Sun (Ultra violet 131-171 A)</span>
+  <span class="article-header-caption">Mount Fuji</span>
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Comparison between Suitable Priors for Additive Bayesian Networks</h1>
+    <h1 itemprop="name">Bayesian Network Modeling Applied to Feline Calicivirus Infection Among Cats in Switzerland</h1>
     <span class="pub-authors" itemprop="author">
       
-      G. Kratzer, R. Furrer, M. Pittavino
+      G. Kratzer, FI. Lewis, B. Willi, ML. Meli, FS. Boretti, R. Hofmann-Lehmann, P. Torgerson, R. Furrer, S. Hartnack
       
     </span>
     <span class="pull-right">
@@ -286,35 +286,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Comparison%20between%20Suitable%20Priors%20for%20Additive%20Bayesian%20Networks&amp;url=%2fpublication%2fcatabn%2f"
+         href="https://twitter.com/intent/tweet?text=Bayesian%20Network%20Modeling%20Applied%20to%20Feline%20Calicivirus%20Infection%20Among%20Cats%20in%20Switzerland&amp;url=%2fpublication%2ffcv%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fcatabn%2f"
+         href="https://www.facebook.com/sharer.php?u=%2fpublication%2ffcv%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fcatabn%2f&amp;title=Comparison%20between%20Suitable%20Priors%20for%20Additive%20Bayesian%20Networks"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2ffcv%2f&amp;title=Bayesian%20Network%20Modeling%20Applied%20to%20Feline%20Calicivirus%20Infection%20Among%20Cats%20in%20Switzerland"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fcatabn%2f&amp;title=Comparison%20between%20Suitable%20Priors%20for%20Additive%20Bayesian%20Networks"
+         href="http://service.weibo.com/share/share.php?url=%2fpublication%2ffcv%2f&amp;title=Bayesian%20Network%20Modeling%20Applied%20to%20Feline%20Calicivirus%20Infection%20Among%20Cats%20in%20Switzerland"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Comparison%20between%20Suitable%20Priors%20for%20Additive%20Bayesian%20Networks&amp;body=%2fpublication%2fcatabn%2f">
+         href="mailto:?subject=Bayesian%20Network%20Modeling%20Applied%20to%20Feline%20Calicivirus%20Infection%20Among%20Cats%20in%20Switzerland&amp;body=%2fpublication%2ffcv%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -328,7 +328,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Additive Bayesian networks are types of graphical models that extend the usual Bayesian generalized linear model to multiple dependent variables through the factorisation of the joint probability distribution of the underlying variables. When fitting an ABN model, the choice of the prior of the parameters is of crucial importance. If an inadequate prior - like a too weakly informative one - is used, data separation and data sparsity lead to issues in the model selection process. In this work a simulation study between two weakly and a strongly informative priors is presented. As weakly informative prior we use a zero mean Gaussian prior with a large variance, currently implemented in the R-package abn. The second prior belongs to the Student&rsquo;s t-distribution, specifically designed for logistic regressions and, finally, the strongly informative prior is again Gaussian with mean equal to true parameter value and a small variance. We compare the impact of these priors on the accuracy of the learned additive Bayesian network in function of different parameters. We create a simulation study to illustrate Lindley&rsquo;s paradox based on the prior choice. We then conclude by highlighting the good performance of the informative Student&rsquo;s t-prior and the limited impact of the Lindley&rsquo;s paradox. Finally, suggestions for further developments are provided.</p>
+    <p class="pub-abstract" itemprop="text">Bayesian network (BN) modeling is a rich and flexible analytical framework capable of elucidating complex veterinary epidemiological data. It is a graphical modeling technique that enables the visual presentation of multi-dimensional results while retaining statistical rigor in population-level inference. Using previously published case study data about feline calicivirus (FCV) and other respiratory pathogens in cats in Switzerland, a full BN modeling analysis is presented. The analysis shows that reducing the group size and vaccinating animals are the two actionable factors directly associated with FCV status and are primary targets to control FCV infection. The presence of gingivostomatitis and Mycoplasma felis is also associated with FCV status, but signs of upper respiratory tract disease (URTD) are not. FCV data is particularly well-suited to a network modeling approach, as both multiple pathogens and multiple clinical signs per pathogen are involved, along with multiple potentially interrelated risk factors. BN modeling is a holistic approach—all variables of interest may be mutually interdependent—which may help to address issues, such as confounding and collinear factors, as well as to disentangle directly vs. indirectly related variables. We introduce the BN methodology as an alternative to the classical uni- and multivariable regression approaches commonly used for risk factor analyses. We advise and guide researchers about how to use BNs as an exploratory data tool and demonstrate the limitations and practical issues. We present a step-by-step case study using FCV data along with all code necessary to reproduce our analyses in the open-source R environment. We compare and contrast the findings of the current case study using BN modeling with previous results that used classical regression techniques, and we highlight new potential insights. Finally, we discuss advanced methods, such as Bayesian model averaging, a common way of accounting for model uncertainty in a Bayesian network context.</p>
     
 
     
@@ -339,8 +339,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#3">
-              Manuscript
+            <a href="/publication/#2">
+              Journal article
             </a>
             
           </div>
@@ -357,7 +357,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">In Bayesian Statistics: New Challenges and New Generations.</div>
+          <div class="col-xs-12 col-sm-9">In <em>Front. Vet. Sci.</em>.</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -371,7 +371,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            September, 2018
+            February, 2020
           </div>
         </div>
       </div>
@@ -390,12 +390,8 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/1809.06636" target="_blank" rel="noopener">
-  Preprint
-</a>
 
-
-<a class="btn btn-primary btn-outline" href="https://link.springer.com/chapter/10.1007/978-3-030-30611-3_10" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://doi.org/10.3389/fvets.2020.00073" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -403,7 +399,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://CRAN.R-project.org/package=abn" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://www.frontiersin.org/articles/10.3389/fvets.2020.00073/full#supplementary-material" target="_blank" rel="noopener">
   Code
 </a>
 

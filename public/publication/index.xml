@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Bayesian Network Modeling Applied to Feline Calicivirus Infection Among Cats in Switzerland</title>
+      <link>/publication/fcv/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/fcv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Additive Bayesian Network Modelling with the R Package abn</title>
+      <link>/publication/abn/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/abn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Additive Bayesian networks for antibiotic resistance and potential risk factors in Salmonella enterica isolates from layer hens in Uganda</title>
       <link>/publication/terence/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0200</pubDate>

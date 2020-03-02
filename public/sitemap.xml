@@ -5,8 +5,35 @@
     
     <url>
     
+      <loc>/publication/fcv/</loc>
+      <lastmod>2020-02-18T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/abn/</loc>
+      <lastmod>2019-11-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/terence/</loc>
       <lastmod>2019-06-16T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/mcmcabn/</loc>
+      <lastmod>2019-04-27T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -318,17 +345,7 @@
     <url>
     
       <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -338,6 +355,16 @@
     <url>
     
       <loc>/tags/r/</loc>
+      <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
       <lastmod>2018-05-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -388,7 +415,7 @@
     <url>
     
       <loc>/tags/software/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <lastmod>2019-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

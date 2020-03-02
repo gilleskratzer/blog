@@ -36,7 +36,7 @@ selected = true
 projects = ["abn"]
 
 # Links (optional).
-url_pdf = "https://arxiv.org/pdf/1809.06636.pdf"
+url_pdf = "https://link.springer.com/chapter/10.1007/978-3-030-30611-3_10"
 url_preprint = "https://arxiv.org/abs/1809.06636"
 url_code = "https://CRAN.R-project.org/package=abn"
 #url_dataset = "#"

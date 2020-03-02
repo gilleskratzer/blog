@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Gilles Kratzer</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mcmcabn</title>
+      <link>/project/mcmcabn/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/project/mcmcabn/</guid>
+      <description>Flexible implementation of a structural MCMC sampler for Directed Acyclic Graphs (DAGs). It supports the new edge reversal move from Grzegorczyk and Husmeier (2008) doi:10.1007/s10994-008-5057-7 and the Markov blanket resampling from Su and Borsuk (2016) http://jmlr.org/papers/v17/su16a.html. It supports three priors: a prior controlling for structure complexity from Koivisto and Sood (2004) http://dl.acm.org/citation.cfm?id=1005332.1005352, an uninformative prior and a user-defined prior. The three main problems that can be addressed by this R package are selecting the most probable structure based on a cache of pre-computed scores, controlling for overfitting, and sampling the landscape of high scoring structures.</description>
+    </item>
     
     <item>
       <title>abn</title>
